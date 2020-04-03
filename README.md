@@ -1,3 +1,5 @@
+An application which allows the user to communicate with (to control remotely) a robot via bluetooth
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Bleincos/ControlRobot/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
