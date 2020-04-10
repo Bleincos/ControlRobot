@@ -11,25 +11,58 @@
     tools:context=".Steering">
 
     <TableRow
-        android:layout_width="316dp"
-        android:layout_height="240dp"
+        android:id="@+id/tableRow"
+        android:layout_width="298dp"
+        android:layout_height="159dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.142">
+        app:layout_constraintVertical_bias="0.22000003">
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="144dp"
-            android:layout_height="106dp"
-            android:background="@drawable/circle"
-            android:textColor="#FFF"
+            android:id="@+id/imageButton8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/Circle_arrow"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="30dp"
             android:text="Round Corner"
-            app:srcCompat="@drawable/Circle_arrow" />
+            android:textColor="#FFF" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/Circle_arrow"
+            android:padding="30dp"
+            android:text="Round Corner"
+            android:textColor="#FFF" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/Circle_arrow"
+            android:padding="30dp"
+            android:text="Round Corner"
+            android:textColor="#FFF" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/Circle_arrow"
+            android:padding="30dp"
+            android:text="Round Corner"
+            android:textColor="#FFF" />
+
     </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

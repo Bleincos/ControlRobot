@@ -11,7 +11,7 @@
 9-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:5:5-25:19
+11-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
 12-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,16 +50,6 @@
 27-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:19:27-74
 28            </intent-filter>
 29        </activity>
-30
-31        <style
-31-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:22:9-24:17
-32            name="Theme.MyApp"
-32-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:22:16-34
-33            parent="Theme.MaterialComponents.DayNight" >
-33-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:22:35-77
-34
-35            <!-- ... -->
-36        </style>
-37    </application>
-38
-39</manifest>
+30    </application>
+31
+32</manifest>

@@ -28,13 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <style
-            name="Theme.MyApp"
-            parent="Theme.MaterialComponents.DayNight" >
-
-            <!-- ... -->
-        </style>
     </application>
 
 </manifest>
