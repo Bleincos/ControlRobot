@@ -24,6 +24,10 @@
         "source": "D:\\Logiciels\\Android studio\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\Logiciels\\Android studio\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round.xml.flat",
+        "source": "D:\\Logiciels\\Android studio\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\drawable\\round.xml"
+    },
+    {
         "merged": "D:\\Logiciels\\Android studio\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
         "source": "D:\\Logiciels\\Android studio\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
