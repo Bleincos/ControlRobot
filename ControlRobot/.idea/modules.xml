@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ControlRobot.iml" filepath="$PROJECT_DIR$/ControlRobot.iml" group="ControlRobot" />
+      <module fileurl="file://$PROJECT_DIR$/app/ControlRobot-app.iml" filepath="$PROJECT_DIR$/app/ControlRobot-app.iml" group="ControlRobot/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ControlRobot/app" />
     </modules>
   </component>
