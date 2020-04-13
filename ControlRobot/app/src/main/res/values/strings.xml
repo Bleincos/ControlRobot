@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ControlRobot</string>
+<<<<<<< HEAD
     <string name="blank" />
     <string name="about">About</string>
     <string name="todo">TODO</string>
@@ -10,4 +11,7 @@
     <string name="description">This app allows the user to control a robot directly from his phone to the robot via bluetooth. \nClick How to use to show instructions</string>
     <string name="back">Back</string>
     <string name="show_Ins">Show Instructions</string>
+=======
+    <string name="button_size">50dp</string>
+>>>>>>> master
 </resources>
