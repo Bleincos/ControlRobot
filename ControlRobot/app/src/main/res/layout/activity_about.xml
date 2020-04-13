@@ -7,4 +7,13 @@
     tools:context=".About">
 
 
+    <TextView
+        android:id="@+id/TextViewAbout"
+        android:layout_width="366dp"
+        android:layout_height="543dp"
+        android:hint="@string/blank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

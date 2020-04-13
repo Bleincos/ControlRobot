@@ -19,7 +19,7 @@
             android:id="@+id/imageButton"
             android:layout_width="123dp"
             android:layout_height="74dp"
-            app:srcCompat="@drawable/Circle_arrow" />
+            android:contentDescription="@string/todo" />
     </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
