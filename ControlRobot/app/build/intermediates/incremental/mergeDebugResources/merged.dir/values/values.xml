@@ -879,7 +879,6 @@
     <string name="app_name">ControlRobot</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="button_size">50dp</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
@@ -954,6 +953,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+<<<<<<< HEAD
 
         <item name="colorSecondary">@color/my_app_secondary_color</item>
         <item name="android:colorBackground">@color/my_app_background_color</item>
@@ -1000,6 +1000,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 >>>>>>> parent of fd1e0d8... Pdf read
+=======
+>>>>>>> parent of d2a5904... màj
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -3817,11 +3819,14 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
+<<<<<<< HEAD
     <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight">
         <!-- ... -->
     </style>
 =======
 >>>>>>> parent of fd1e0d8... Pdf read
+=======
+>>>>>>> parent of d2a5904... màj
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>

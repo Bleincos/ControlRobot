@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ControlRobot</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="blank" />
     <string name="about">About</string>
     <string name="todo">TODO</string>
@@ -17,4 +18,6 @@
 >>>>>>> master
 =======
 >>>>>>> parent of fd1e0d8... Pdf read
+=======
+>>>>>>> parent of d2a5904... màj
 </resources>
