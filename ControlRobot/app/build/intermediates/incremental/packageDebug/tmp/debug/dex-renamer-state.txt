@@ -1,4 +1,4 @@
-#Mon Apr 13 22:48:51 CEST 2020
+#Mon Apr 13 19:24:13 CEST 2020
 base.0=C\:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

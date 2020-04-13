@@ -5,16 +5,16 @@
         "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_arrow.jpg.flat",
-        "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\drawable\\circle_arrow.jpg"
+        "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_1.xml.flat",
         "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\drawable\\button_1.xml"
     },
     {
-        "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_arrow.jpg.flat",
+        "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\drawable\\circle_arrow.jpg"
     },
     {
         "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
@@ -51,10 +51,6 @@
     {
         "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\layout_show_pdf.xml.flat",
-        "source": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\src\\main\\res\\layout\\show_pdf.xml"
     },
     {
         "merged": "C:\\Users\\olivi\\AndroidStudioProjects\\ControlRobot\\ControlRobot\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",

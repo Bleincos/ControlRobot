@@ -4,6 +4,7 @@
     <string name="blank" />
     <string name="about">About</string>
     <string name="todo">TODO</string>
+<<<<<<< HEAD
     <string name="marwane">Marwane</string>
     <string name="and">and</string>
     <string name="olivier_bleinc">Olivier Bleinc</string>
@@ -14,4 +15,6 @@
 =======
     <string name="button_size">50dp</string>
 >>>>>>> master
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
 </resources>

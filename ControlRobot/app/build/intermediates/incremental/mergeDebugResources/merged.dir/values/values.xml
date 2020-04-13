@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <attr format="reference" name="appBarLayoutStyle"/>
     <attr format="reference" name="badgeStyle"/>
+=======
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+>>>>>>> parent of fd1e0d8... Pdf read
     <attr format="boolean" name="barrierAllowsGoneWidgets"/>
     <attr format="enum" name="barrierDirection">
         <enum name="left" value="0"/>
@@ -11,6 +15,7 @@
         <enum name="start" value="5"/>
         <enum name="end" value="6"/>
     </attr>
+<<<<<<< HEAD
     <attr format="reference" name="bottomAppBarStyle"/>
     <attr format="reference" name="bottomNavigationStyle"/>
     <attr format="reference" name="bottomSheetDialogTheme"/>
@@ -39,10 +44,18 @@
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="color" name="elevationOverlayColor"/>
     <attr format="boolean" name="elevationOverlayEnabled"/>
+=======
+    <attr format="boolean" name="chainUseRtl"/>
+    <attr format="reference" name="constraintSet"/>
+    <attr format="string" name="constraint_referenced_ids"/>
+    <attr format="reference" name="content"/>
+    <attr format="reference" name="drawerArrowStyle"/>
+>>>>>>> parent of fd1e0d8... Pdf read
     <attr name="emptyVisibility">
         <enum name="gone" value="0"/>
         <enum name="invisible" value="1"/>
     </attr>
+<<<<<<< HEAD
     <attr format="boolean" name="ensureMinTouchTargetSize"/>
     <attr format="reference" name="extendedFloatingActionButtonStyle"/>
     <attr format="reference" name="floatingActionButtonStyle"/>
@@ -53,6 +66,10 @@
     <attr format="reference" name="itemShapeAppearance"/>
     <attr format="reference" name="itemShapeAppearanceOverlay"/>
     <attr format="color" name="itemTextColor"/>
+=======
+    <attr format="dimension" name="height"/>
+    <attr format="boolean" name="isLightTheme"/>
+>>>>>>> parent of fd1e0d8... Pdf read
     <attr format="boolean" name="layout_constrainedHeight"/>
     <attr format="boolean" name="layout_constrainedWidth"/>
     <attr format="integer" name="layout_constraintBaseline_creator"/>
@@ -154,13 +171,18 @@
     <attr format="dimension" name="layout_goneMarginTop"/>
     <attr name="layout_optimizationLevel">
         <flag name="none" value="0"/>
+<<<<<<< HEAD
         <flag name="standard" value="7"/> <!-- direct, barriers, chains -->
+=======
+        <flag name="standard" value="7"/> 
+>>>>>>> parent of fd1e0d8... Pdf read
         <flag name="direct" value="1"/>
         <flag name="barrier" value="2"/>
         <flag name="chains" value="4"/>
         <flag name="dimensions" value="8"/>
         <flag name="groups" value="32"/>
     </attr>
+<<<<<<< HEAD
     <attr format="reference" name="materialButtonOutlinedStyle"/>
     <attr format="reference" name="materialButtonStyle"/>
     <attr format="reference" name="materialButtonToggleGroupStyle"/>
@@ -217,6 +239,12 @@
     <bool name="abc_allow_stacked_button_bar">false</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+=======
+    <attr format="string" name="title"/>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+>>>>>>> parent of fd1e0d8... Pdf read
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -235,6 +263,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+<<<<<<< HEAD
     <color name="cardview_dark_background">#FF424242</color>
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
@@ -277,6 +306,11 @@
     <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
     <color name="design_snackbar_background_color">#323232</color>
+=======
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+>>>>>>> parent of fd1e0d8... Pdf read
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -299,6 +333,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+<<<<<<< HEAD
     <color name="mtrl_btn_text_color_disabled">#61000000</color>
     <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
     <color name="mtrl_scrim_color">#52000000</color>
@@ -307,6 +342,8 @@
     <color name="mtrl_textinput_filled_box_default_background_color">#0A000000</color>
     <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
     <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -407,11 +444,14 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+<<<<<<< HEAD
     <dimen name="action_bar_size">16dp</dimen>
     <dimen name="appcompat_dialog_background_inset">16dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
     <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
@@ -419,6 +459,7 @@
     <dimen name="compat_control_corner_material">2dp</dimen>
     <dimen name="compat_notification_large_icon_max_height">320dp</dimen>
     <dimen name="compat_notification_large_icon_max_width">320dp</dimen>
+<<<<<<< HEAD
     <dimen name="default_dimension">100dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
@@ -471,6 +512,10 @@
     <dimen name="fastscroll_default_thickness">8dp</dimen>
     <dimen name="fastscroll_margin">0dp</dimen>
     <dimen name="fastscroll_minimum_range">50dp</dimen>
+=======
+    <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
+    <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+>>>>>>> parent of fd1e0d8... Pdf read
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -478,6 +523,7 @@
     <item format="float" name="hint_alpha_material_light" type="dimen">0.38</item>
     <item format="float" name="hint_pressed_alpha_material_dark" type="dimen">0.70</item>
     <item format="float" name="hint_pressed_alpha_material_light" type="dimen">0.54</item>
+<<<<<<< HEAD
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
@@ -649,6 +695,8 @@
     <dimen name="mtrl_tooltip_minWidth">32dp</dimen>
     <dimen name="mtrl_tooltip_padding">12dp</dimen>
     <dimen name="mtrl_transition_shared_axis_slide_distance">30dp</dimen>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <dimen name="notification_action_icon_size">32dp</dimen>
     <dimen name="notification_action_text_size">13sp</dimen>
     <dimen name="notification_big_circle_margin">12dp</dimen>
@@ -664,7 +712,10 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+<<<<<<< HEAD
     <dimen name="test_mtrl_calendar_day_cornerSize">52dp</dimen>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -712,6 +763,7 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+<<<<<<< HEAD
     <item name="ghost_view" type="id"/>
     <item name="ghost_view_holder" type="id"/>
     <item name="home" type="id"/>
@@ -729,6 +781,13 @@
     <item name="save_overlay_view" type="id"/>
     <item name="snackbar_action" type="id"/>
     <item name="snackbar_text" type="id"/>
+=======
+    <item name="home" type="id"/>
+    <item name="line1" type="id"/>
+    <item name="line3" type="id"/>
+    <item name="progress_circular" type="id"/>
+    <item name="progress_horizontal" type="id"/>
+>>>>>>> parent of fd1e0d8... Pdf read
     <item name="split_action_bar" type="id"/>
     <item name="tag_accessibility_actions" type="id"/>
     <item name="tag_accessibility_clickable_spans" type="id"/>
@@ -740,6 +799,7 @@
     <item name="tag_unhandled_key_listeners" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
+<<<<<<< HEAD
     <item name="textinput_counter" type="id"/>
     <item name="textinput_error" type="id"/>
     <item name="textinput_helper_text" type="id"/>
@@ -779,6 +839,15 @@
     <item quantity="one"><ns1:g id="count">%d</ns1:g> new notification</item>
     <item quantity="other"><ns1:g id="count">%d</ns1:g> new notifications</item>
   </plurals>
+=======
+    <item name="title" type="id"/>
+    <item name="up" type="id"/>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+>>>>>>> parent of fd1e0d8... Pdf read
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -806,6 +875,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+<<<<<<< HEAD
     <string name="app_name">ControlRobot</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
@@ -912,6 +982,24 @@
         <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
         <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
         <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+=======
+    <string name="about">About</string>
+    <string name="app_name">ControlRobot</string>
+    <string name="blank"/>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="todo">TODO</string>
+    <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
+    <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
+    <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
+    <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
+    <style name="Animation.AppCompat.Tooltip" parent="Base.Animation.AppCompat.Tooltip"/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+>>>>>>> parent of fd1e0d8... Pdf read
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -934,6 +1022,7 @@
         <item name="android:windowEnterAnimation">@anim/abc_tooltip_enter</item>
         <item name="android:windowExitAnimation">@anim/abc_tooltip_exit</item>
     </style>
+<<<<<<< HEAD
     <style name="Base.CardView" parent="android:Widget">
         <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
         <item name="cardElevation">@dimen/cardview_default_elevation</item>
@@ -941,6 +1030,8 @@
         <item name="cardUseCompatPadding">false</item>
         <item name="cardPreventCornerOverlap">true</item>
     </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Base.DialogWindowTitle.AppCompat" parent="android:Widget">
         <item name="android:maxLines">1</item>
         <item name="android:scrollHorizontally">true</item>
@@ -952,6 +1043,7 @@
         <item name="android:paddingRight">?attr/dialogPreferredPadding</item>
         <item name="android:paddingTop">@dimen/abc_dialog_padding_top_material</item>
     </style>
+<<<<<<< HEAD
     <style name="Base.MaterialAlertDialog.MaterialComponents.Title.Icon" parent="android:Widget">
     <item name="android:layout_width">32dip</item>
     <item name="android:layout_height">32dip</item>
@@ -974,6 +1066,8 @@
     <item name="android:ellipsize">end</item>
     <item name="android:singleLine">true</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorHint">?android:textColorHint</item>
@@ -1136,6 +1230,7 @@
     <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="TextAppearance.AppCompat.Menu"/>
     <style name="Base.TextAppearance.AppCompat.Widget.Switch" parent="TextAppearance.AppCompat.Button"/>
     <style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="TextAppearance.AppCompat.Menu"/>
+<<<<<<< HEAD
     <style name="Base.TextAppearance.MaterialComponents.Badge" parent="TextAppearance.AppCompat">
     <!-- Fake Roboto Medium. -->
     <item name="fontFamily">sans-serif-medium</item>
@@ -1173,6 +1268,8 @@
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">0.00714285714</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="android:TextAppearance.Medium">
         <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
     </style>
@@ -1210,7 +1307,11 @@
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
 
+<<<<<<< HEAD
         <!-- Panel attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
@@ -1232,6 +1333,7 @@
         <item name="android:windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Theme.AppCompat.Light"/>
+<<<<<<< HEAD
     <style name="Base.Theme.MaterialComponents" parent="Base.V14.Theme.MaterialComponents"/>
     <style name="Base.Theme.MaterialComponents.Bridge" parent="Base.V14.Theme.MaterialComponents.Bridge"/>
     <style name="Base.Theme.MaterialComponents.CompactMenu" parent="">
@@ -1286,6 +1388,8 @@
     <item name="android:windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
   </style>
     <style name="Base.Theme.MaterialComponents.Light.DialogWhenLarge" parent="Theme.MaterialComponents.Light"/>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Base.ThemeOverlay.AppCompat" parent="Platform.ThemeOverlay.AppCompat"/>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
@@ -1315,7 +1419,11 @@
         <item name="colorButtonNormal">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
 
+<<<<<<< HEAD
         <!-- Used by MediaRouter -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="isLightTheme">false</item>
     </style>
     <style name="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -1352,6 +1460,7 @@
         <item name="colorButtonNormal">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
 
+<<<<<<< HEAD
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">true</item>
     </style>
@@ -1881,6 +1990,11 @@
     <item name="android:backgroundDimAmount">0.32</item>
     <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.MaterialComponents.Body.Text</item>
   </style>
+=======
+        
+        <item name="isLightTheme">true</item>
+    </style>
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
         <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
         <item name="windowNoTitle">false</item>
@@ -1891,7 +2005,11 @@
 
         <item name="colorBackgroundFloating">@color/background_floating_material_dark</item>
 
+<<<<<<< HEAD
         <!-- Used by MediaRouter -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="isLightTheme">false</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
@@ -1902,7 +2020,11 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
+<<<<<<< HEAD
         <!-- Action Bar Styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
@@ -1919,10 +2041,17 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
+<<<<<<< HEAD
         <!-- Dropdown Spinner Attributes -->
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
 
         <!-- Action Mode -->
+=======
+        
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -1935,14 +2064,22 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
+<<<<<<< HEAD
         <!-- Panel attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
+<<<<<<< HEAD
         <!-- List attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSecondary">@style/TextAppearance.AppCompat.Body1</item>
@@ -1954,16 +2091,28 @@
         <item name="listPreferredItemPaddingStart">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingEnd">@dimen/abc_list_item_padding_horizontal_material</item>
 
+<<<<<<< HEAD
         <!-- Spinner styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
+<<<<<<< HEAD
         <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
         <!-- Popup Menu styles -->
+=======
+        
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
@@ -1972,17 +2121,28 @@
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="listMenuViewStyle">@style/Widget.AppCompat.ListMenuView</item>
 
+<<<<<<< HEAD
         <!-- SearchView attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
+<<<<<<< HEAD
         <!-- ShareActionProvider attributes -->
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
         <!-- Toolbar styles -->
+=======
+        
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -1992,7 +2152,11 @@
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:textViewStyle">@style/Widget.AppCompat.TextView</item>
 
+<<<<<<< HEAD
         <!-- Color palette -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
         <item name="colorPrimary">@color/primary_material_dark</item>
         <item name="colorAccent">@color/accent_material_dark</item>
@@ -2015,7 +2179,11 @@
         <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
         <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
+<<<<<<< HEAD
         <!-- Button styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
@@ -2028,7 +2196,11 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
+<<<<<<< HEAD
         <!-- Dialog attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
         <item name="dialogCornerRadius">@dimen/abc_dialog_corner_radius_material</item>
@@ -2039,14 +2211,22 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_dark</item>
         <item name="listDividerAlertDialog">@null</item>
 
+<<<<<<< HEAD
         <!-- Define these here; ContextThemeWrappers around themes that define them should
              always clear these values. -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="windowFixedWidthMajor">@null</item>
         <item name="windowFixedWidthMinor">@null</item>
         <item name="windowFixedHeightMajor">@null</item>
         <item name="windowFixedHeightMinor">@null</item>
 
+<<<<<<< HEAD
         <!-- Tooltip attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_light</item>
         <item name="tooltipForegroundColor">@color/foreground_material_light</item>
 
@@ -2089,7 +2269,11 @@
 
         <item name="colorBackgroundFloating">@color/background_floating_material_light</item>
 
+<<<<<<< HEAD
         <!-- Used by MediaRouter -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="isLightTheme">true</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
@@ -2100,7 +2284,11 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
+<<<<<<< HEAD
         <!-- Action Bar Styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText</item>
@@ -2117,7 +2305,11 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
+<<<<<<< HEAD
         <!-- Action Mode -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -2130,17 +2322,28 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
+<<<<<<< HEAD
         <!-- Dropdown Spinner Attributes -->
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
 
         <!-- Panel attributes -->
+=======
+        
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_light</item>
 
+<<<<<<< HEAD
         <!-- List attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSecondary">@style/TextAppearance.AppCompat.Body1</item>
@@ -2152,16 +2355,28 @@
         <item name="listPreferredItemPaddingStart">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingEnd">@dimen/abc_list_item_padding_horizontal_material</item>
 
+<<<<<<< HEAD
         <!-- Spinner styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
+<<<<<<< HEAD
         <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
         <!-- Popup Menu styles -->
+=======
+        
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
@@ -2170,17 +2385,28 @@
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="listMenuViewStyle">@style/Widget.AppCompat.ListMenuView</item>
 
+<<<<<<< HEAD
         <!-- SearchView attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
+<<<<<<< HEAD
         <!-- ShareActionProvider attributes -->
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
         <!-- Toolbar styles -->
+=======
+        
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -2190,7 +2416,11 @@
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:textViewStyle">@style/Widget.AppCompat.TextView</item>
 
+<<<<<<< HEAD
         <!-- Color palette -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="colorPrimaryDark">@color/primary_dark_material_light</item>
         <item name="colorPrimary">@color/primary_material_light</item>
         <item name="colorAccent">@color/accent_material_light</item>
@@ -2213,7 +2443,11 @@
         <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
         <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
+<<<<<<< HEAD
         <!-- Button styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
@@ -2226,7 +2460,11 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
+<<<<<<< HEAD
         <!-- Dialog attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
         <item name="dialogCornerRadius">@dimen/abc_dialog_corner_radius_material</item>
@@ -2237,14 +2475,22 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_light</item>
         <item name="listDividerAlertDialog">@null</item>
 
+<<<<<<< HEAD
         <!-- Define these here; ContextThemeWrappers around themes that define them should
              always clear these values. -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="windowFixedWidthMajor">@null</item>
         <item name="windowFixedWidthMinor">@null</item>
         <item name="windowFixedHeightMajor">@null</item>
         <item name="windowFixedHeightMinor">@null</item>
 
+<<<<<<< HEAD
         <!-- Tooltip attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_dark</item>
         <item name="tooltipForegroundColor">@color/foreground_material_dark</item>
 
@@ -2628,6 +2874,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
+<<<<<<< HEAD
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
     <item name="android:background">@null</item>
     <item name="tabIconTint">@null</item>
@@ -2836,6 +3083,8 @@
     <item name="android:layout_gravity">center</item>
     <item name="android:textAlignment" ns2:ignore="NewApi">center</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -2844,7 +3093,11 @@
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="android:borderlessButtonStyle">?attr/borderlessButtonStyle</item>
 
+<<<<<<< HEAD
         <!-- Window colors -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:colorForeground">@color/foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
@@ -2853,7 +3106,11 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_dark</item>
 
+<<<<<<< HEAD
         <!-- Text colors -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
@@ -2869,7 +3126,11 @@
         <item name="android:textColorLinkInverse">?attr/colorAccent</item>
         <item name="android:textColorAlertDialogListItem">@color/abc_primary_text_material_dark</item>
 
+<<<<<<< HEAD
         <!-- Text styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -2884,10 +3145,17 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
         <item name="listChoiceIndicatorMultipleAnimated">@drawable/abc_btn_check_material_anim</item>
 
+<<<<<<< HEAD
         <!-- List attributes -->
         <item name="android:textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="android:textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <!-- textAppearanceListItemSecondary is 21+ only so not safe to apply here-->
+=======
+        
+        <item name="android:textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:listPreferredItemHeight">@dimen/abc_list_item_height_material</item>
         <item name="android:listPreferredItemHeightSmall">@dimen/abc_list_item_height_small_material</item>
         <item name="android:listPreferredItemHeightLarge">@dimen/abc_list_item_height_large_material</item>
@@ -2913,7 +3181,11 @@
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="android:borderlessButtonStyle">?attr/borderlessButtonStyle</item>
 
+<<<<<<< HEAD
         <!-- Window colors -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:colorForeground">@color/foreground_material_light</item>
         <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
@@ -2922,7 +3194,11 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_light</item>
 
+<<<<<<< HEAD
         <!-- Text colors -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
@@ -2939,7 +3215,11 @@
         <item name="android:textColorLinkInverse">?attr/colorAccent</item>
         <item name="android:textColorAlertDialogListItem">@color/abc_primary_text_material_light</item>
 
+<<<<<<< HEAD
         <!-- Text styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -2954,10 +3234,17 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
         <item name="listChoiceIndicatorMultipleAnimated">@drawable/abc_btn_check_material_anim</item>
 
+<<<<<<< HEAD
         <!-- List attributes -->
         <item name="android:textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="android:textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <!-- textAppearanceListItemSecondary is 21+ only so not safe to apply here-->
+=======
+        
+        <item name="android:textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:listPreferredItemHeight">@dimen/abc_list_item_height_material</item>
         <item name="android:listPreferredItemHeightSmall">@dimen/abc_list_item_height_small_material</item>
         <item name="android:listPreferredItemHeightLarge">@dimen/abc_list_item_height_large_material</item>
@@ -2975,6 +3262,7 @@
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_light</item>
         <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_light</item>
     </style>
+<<<<<<< HEAD
     <style name="Platform.MaterialComponents" parent="Theme.AppCompat"/>
     <style name="Platform.MaterialComponents.Dialog" parent="Theme.AppCompat.Dialog"/>
     <style name="Platform.MaterialComponents.Light" parent="Theme.AppCompat.Light"/>
@@ -2982,11 +3270,20 @@
     <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
     <style name="Platform.ThemeOverlay.AppCompat.Dark">
         <!-- Action Bar styles -->
+=======
+    <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
+    <style name="Platform.ThemeOverlay.AppCompat.Dark">
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
 
+<<<<<<< HEAD
         <!-- SearchView styles -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
@@ -2995,7 +3292,11 @@
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
 
+<<<<<<< HEAD
         <!-- SearchView attributes -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
@@ -3055,6 +3356,7 @@
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
+<<<<<<< HEAD
     <style name="ShapeAppearance.MaterialComponents" parent="">
     <item name="cornerFamily">rounded</item>
   </style>
@@ -3171,6 +3473,8 @@
     <style name="TestThemeWithLineHeightDisabled" parent="TestThemeWithLineHeight">
     <item name="textAppearanceLineHeightEnabled">false</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -3238,6 +3542,7 @@
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+<<<<<<< HEAD
     <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="TextAppearance.AppCompat.Display1">
     <item name="android:textColor">?android:attr/textColorPrimary</item>
   </style>
@@ -3355,6 +3660,8 @@
     <style name="TextAppearance.MaterialComponents.Tooltip" parent="TextAppearance.MaterialComponents.Body2">
     <item name="android:textColor">?attr/colorOnPrimary</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
@@ -3390,6 +3697,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+<<<<<<< HEAD
     <style name="Theme.Design" parent="Theme.AppCompat">
   </style>
     <style name="Theme.Design.BottomSheetDialog" parent="Theme.AppCompat.Dialog">
@@ -3512,6 +3820,8 @@
     <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight">
         <!-- ... -->
     </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -3524,6 +3834,7 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+<<<<<<< HEAD
     <style name="ThemeOverlay.Design.TextInputEditText" parent=""/>
     <style name="ThemeOverlay.MaterialComponents" parent="ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.MaterialComponents.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar"/>
@@ -3677,6 +3988,8 @@
     <style name="ThemeOverlayColorAccentRed" ns2:ignore="NewApi">
     <item name="android:colorAccent">#FFFF0000</item>
   </style>
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -3774,6 +4087,7 @@
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
     <style name="Widget.Compat.NotificationActionContainer" parent=""/>
     <style name="Widget.Compat.NotificationActionText" parent=""/>
+<<<<<<< HEAD
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
     <item name="android:background">?attr/colorPrimary</item>
     <item name="android:stateListAnimator" ns2:ignore="NewApi">
@@ -4493,6 +4807,19 @@
             <enum name="tabMode" value="2"/>
         </attr>
         <!-- Options affecting how the action bar is displayed. -->
+=======
+    <declare-styleable name="ActionBar">
+        
+        <attr name="navigationMode">
+            
+            <enum name="normal" value="0"/>
+            
+            <enum name="listMode" value="1"/>
+            
+            <enum name="tabMode" value="2"/>
+        </attr>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="displayOptions">
             <flag name="none" value="0"/>
             <flag name="useLogo" value="0x1"/>
@@ -4502,6 +4829,7 @@
             <flag name="showCustom" value="0x10"/>
             <flag name="disableHome" value="0x20"/>
         </attr>
+<<<<<<< HEAD
         <!-- Specifies title text used for navigationMode="normal" -->
         <attr name="title"/>
         <!-- Specifies subtitle text used for navigationMode="normal" -->
@@ -4563,6 +4891,61 @@
         <attr format="dimension" name="elevation"/>
         <!-- Reference to a theme that should be used to inflate popups
              shown by widgets in the action bar. -->
+=======
+        
+        <attr name="title"/>
+        
+        <attr format="string" name="subtitle"/>
+        
+        <attr format="reference" name="titleTextStyle"/>
+        
+        <attr format="reference" name="subtitleTextStyle"/>
+        
+        <attr format="reference" name="icon"/>
+        
+        <attr format="reference" name="logo"/>
+        
+        <attr format="reference" name="divider"/>
+        
+        <attr format="reference" name="background"/>
+        
+        <attr format="reference|color" name="backgroundStacked"/>
+        
+        <attr format="reference|color" name="backgroundSplit"/>
+        
+        <attr format="reference" name="customNavigationLayout"/>
+        
+        <attr name="height"/>
+        
+        <attr format="reference" name="homeLayout"/>
+        
+        <attr format="reference" name="progressBarStyle"/>
+        
+        <attr format="reference" name="indeterminateProgressStyle"/>
+        
+        <attr format="dimension" name="progressBarPadding"/>
+        
+        <attr name="homeAsUpIndicator"/>
+        
+        <attr format="dimension" name="itemPadding"/>
+        
+        <attr format="boolean" name="hideOnContentScroll"/>
+        
+        <attr format="dimension" name="contentInsetStart"/>
+        
+        <attr format="dimension" name="contentInsetEnd"/>
+        
+        <attr format="dimension" name="contentInsetLeft"/>
+        
+        <attr format="dimension" name="contentInsetRight"/>
+        
+        <attr format="dimension" name="contentInsetStartWithNavigation"/>
+        
+        <attr format="dimension" name="contentInsetEndWithActions"/>
+        
+        <attr format="dimension" name="elevation"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="reference" name="popupTheme"/>
     </declare-styleable>
     <declare-styleable name="ActionBarLayout">
@@ -4572,6 +4955,7 @@
         <attr name="android:minWidth"/>
     </declare-styleable>
     <declare-styleable name="ActionMenuView">
+<<<<<<< HEAD
         <!-- Size of padding on either end of a divider. -->
     </declare-styleable>
     <declare-styleable name="ActionMode">
@@ -4597,6 +4981,28 @@
              example, if share activity is to be chosen the drawable should
              give a clue that sharing is to be performed.
          -->
+=======
+        
+    </declare-styleable>
+    <declare-styleable name="ActionMode">
+        
+        <attr name="titleTextStyle"/>
+        
+        <attr name="subtitleTextStyle"/>
+        
+        <attr name="background"/>
+        
+        <attr name="backgroundSplit"/>
+        
+        <attr name="height"/>
+        
+        <attr format="reference" name="closeItemLayout"/>
+    </declare-styleable>
+    <declare-styleable name="ActivityChooserView">
+        
+        <attr format="string" name="initialActivityCount"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
     </declare-styleable>
     <declare-styleable name="AlertDialog">
@@ -4610,6 +5016,7 @@
         <attr format="dimension" name="buttonIconDimen"/>
     </declare-styleable>
     <declare-styleable name="AnimatedStateListDrawableCompat">
+<<<<<<< HEAD
         <!-- Indicates whether the drawable should be initially visible. -->
         <attr name="android:visible"/>
         <!-- If true, allows the drawable's padding to change based on the
@@ -4757,11 +5164,66 @@
             <enum name="screen" value="15"/>
             <!-- Combines the tint and icon color and alpha channels, clamping the
                  result to valid color values. Saturate(S + D) -->
+=======
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable>
+    <declare-styleable name="AnimatedStateListDrawableItem">
+        
+        <attr name="android:drawable"/>
+        
+        <attr name="android:id"/>
+    </declare-styleable>
+    <declare-styleable name="AnimatedStateListDrawableTransition">
+        
+        <attr name="android:fromId"/>
+        
+        <attr name="android:toId"/>
+        
+        <attr name="android:drawable"/>
+        
+        <attr name="android:reversible"/>
+    </declare-styleable>
+    <declare-styleable name="AppCompatImageView">
+        <attr name="android:src"/>
+        
+        <attr format="reference" name="srcCompat"/>
+
+        
+        <attr format="color" name="tint"/>
+
+        
+        <attr name="tintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="AppCompatSeekBar">
         <attr name="android:thumb"/>
+<<<<<<< HEAD
         <!-- Drawable displayed at each progress position on a seekbar. -->
         <attr format="reference" name="tickMark"/>
         <!-- Tint to apply to the tick mark drawable. -->
@@ -4784,6 +5246,25 @@
             <enum name="screen" value="15"/>
             <!-- Combines the tint and drawable color and alpha channels, clamping the
                  result to valid color values. Saturate(S + D) -->
+=======
+        
+        <attr format="reference" name="tickMark"/>
+        
+        <attr format="color" name="tickMarkTint"/>
+        
+        <attr name="tickMarkTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -4797,6 +5278,7 @@
         <attr name="android:textAppearance"/>
     </declare-styleable>
     <declare-styleable name="AppCompatTextView">
+<<<<<<< HEAD
         <!-- Present the text in ALL CAPS. This may use a small-caps form when available. -->
         <attr format="reference|boolean" name="textAllCaps"/>
         <!-- Set the textLocale by a comma-separated language tag string,
@@ -4842,12 +5324,46 @@
         <attr format="string" name="fontVariationSettings"/>
         <!-- Compound drawables allowing the use of vector drawable when running on older versions
              of the platform. -->
+=======
+        
+        <attr format="reference|boolean" name="textAllCaps"/>
+        
+        <attr format="string" name="textLocale"/>
+        <attr name="android:textAppearance"/>
+        
+        <attr format="enum" name="autoSizeTextType">
+            
+            <enum name="none" value="0"/>
+            
+            <enum name="uniform" value="1"/>
+        </attr>
+        
+        <attr format="dimension" name="autoSizeStepGranularity"/>
+        
+        <attr format="reference" name="autoSizePresetSizes"/>
+        
+        <attr format="dimension" name="autoSizeMinTextSize"/>
+        
+        <attr format="dimension" name="autoSizeMaxTextSize"/>
+        
+        <attr format="string" name="fontFamily"/>
+        
+        <attr format="dimension" name="lineHeight"/>
+        
+        <attr format="dimension" name="firstBaselineToTopHeight"/>
+        
+        <attr format="dimension" name="lastBaselineToBottomHeight"/>
+        
+        <attr format="string" name="fontVariationSettings"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="reference" name="drawableLeftCompat"/>
         <attr format="reference" name="drawableTopCompat"/>
         <attr format="reference" name="drawableRightCompat"/>
         <attr format="reference" name="drawableBottomCompat"/>
         <attr format="reference" name="drawableStartCompat"/>
         <attr format="reference" name="drawableEndCompat"/>
+<<<<<<< HEAD
         <!-- Tint to apply to the compound (left, top, etc.) drawables. -->
         <attr format="color" name="drawableTint"/>
         <!-- Blending mode used to apply the compound (left, top, etc.) drawables tint. -->
@@ -4868,11 +5384,29 @@
             <enum name="screen" value="15"/>
             <!-- Combines the tint and drawable color and alpha channels, clamping the
                  result to valid color values. Saturate(S + D) -->
+=======
+        
+        <attr format="color" name="drawableTint"/>
+        
+        <attr name="drawableTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="AppCompatTheme">
 
+<<<<<<< HEAD
         <!-- ============= -->
         <!-- Window styles -->
         <!-- ============= -->
@@ -4921,21 +5455,62 @@
              axis of the screen.  That is, when in portrait.  Can be either
              an absolute dimension or a fraction of the screen size in that
              dimension. -->
+=======
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="boolean" name="windowActionBar"/>
+
+        
+        <attr format="boolean" name="windowNoTitle"/>
+
+        
+        <attr format="boolean" name="windowActionBarOverlay"/>
+
+        
+        <attr format="boolean" name="windowActionModeOverlay"/>
+
+        
+        <attr format="dimension|fraction" name="windowFixedWidthMajor"/>
+        
+        <attr format="dimension|fraction" name="windowFixedHeightMinor"/>
+
+        
+        <attr format="dimension|fraction" name="windowFixedWidthMinor"/>
+        
+        <attr format="dimension|fraction" name="windowFixedHeightMajor"/>
+
+        
+        <attr format="dimension|fraction" name="windowMinWidthMajor"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="dimension|fraction" name="windowMinWidthMinor"/>
 
         <attr name="android:windowIsFloating"/>
         <attr name="android:windowAnimationStyle"/>
 
+<<<<<<< HEAD
         <!-- =================== -->
         <!-- Action bar styles   -->
         <!-- =================== -->
         <eat-comment/>
         <!-- Default style for tabs within an action bar -->
+=======
+        
+        
+        
+        <eat-comment/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="reference" name="actionBarTabStyle"/>
         <attr format="reference" name="actionBarTabBarStyle"/>
         <attr format="reference" name="actionBarTabTextStyle"/>
         <attr format="reference" name="actionOverflowButtonStyle"/>
         <attr format="reference" name="actionOverflowMenuStyle"/>
+<<<<<<< HEAD
         <!-- Reference to a theme that should be used to inflate popups
              shown by widgets in the action bar. -->
         <attr format="reference" name="actionBarPopupTheme"/>
@@ -5187,10 +5762,245 @@
         <!-- ============ -->
         <!-- Alert Dialog styles -->
         <!-- ============ -->
+=======
+        
+        <attr format="reference" name="actionBarPopupTheme"/>
+        
+        <attr format="reference" name="actionBarStyle"/>
+        
+        <attr format="reference" name="actionBarSplitStyle"/>
+        
+        <attr format="reference" name="actionBarTheme"/>
+        
+        <attr format="reference" name="actionBarWidgetTheme"/>
+        
+        <attr format="dimension" name="actionBarSize">
+            <enum name="wrap_content" value="0"/>
+        </attr>
+        
+        <attr format="reference" name="actionBarDivider"/>
+        
+        <attr format="reference" name="actionBarItemBackground"/>
+        
+        <attr format="reference" name="actionMenuTextAppearance"/>
+        
+        
+        <attr format="color|reference" name="actionMenuTextColor"/>
+
+
+        
+        
+        
+        <eat-comment/>
+        <attr format="reference" name="actionModeStyle"/>
+        <attr format="reference" name="actionModeCloseButtonStyle"/>
+        
+        <attr format="reference" name="actionModeBackground"/>
+        
+        <attr format="reference" name="actionModeSplitBackground"/>
+        
+        <attr format="reference" name="actionModeCloseDrawable"/>
+        
+        <attr format="reference" name="actionModeCutDrawable"/>
+        
+        <attr format="reference" name="actionModeCopyDrawable"/>
+        
+        <attr format="reference" name="actionModePasteDrawable"/>
+        
+        <attr format="reference" name="actionModeSelectAllDrawable"/>
+        
+        <attr format="reference" name="actionModeShareDrawable"/>
+        
+        <attr format="reference" name="actionModeFindDrawable"/>
+        
+        <attr format="reference" name="actionModeWebSearchDrawable"/>
+
+        
+        <attr format="reference" name="actionModePopupWindowStyle"/>
+
+
+        
+        
+        
+        <eat-comment/>
+        
+        <attr format="reference" name="textAppearanceLargePopupMenu"/>
+        
+        <attr format="reference" name="textAppearanceSmallPopupMenu"/>
+        
+        <attr format="reference" name="textAppearancePopupMenuHeader"/>
+
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="dialogTheme"/>
+        
+        <attr format="dimension" name="dialogPreferredPadding"/>
+        
+        <attr format="reference" name="listDividerAlertDialog"/>
+        
+        <attr format="dimension" name="dialogCornerRadius"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="actionDropDownStyle"/>
+        
+        <attr format="dimension" name="dropdownListPreferredItemHeight"/>
+        
+        <attr format="reference" name="spinnerDropDownItemStyle"/>
+        
+        <attr format="reference" name="homeAsUpIndicator"/>
+
+        
+        <attr format="reference" name="actionButtonStyle"/>
+
+        
+        <attr format="reference" name="buttonBarStyle"/>
+        
+        <attr format="reference" name="buttonBarButtonStyle"/>
+        
+        <attr format="reference" name="selectableItemBackground"/>
+        
+        <attr format="reference" name="selectableItemBackgroundBorderless"/>
+        
+        <attr format="reference" name="borderlessButtonStyle"/>
+        
+        <attr format="reference" name="dividerVertical"/>
+        
+        <attr format="reference" name="dividerHorizontal"/>
+        
+        <attr format="reference" name="activityChooserViewStyle"/>
+
+        
+        <attr format="reference" name="toolbarStyle"/>
+        
+        <attr format="reference" name="toolbarNavigationButtonStyle"/>
+
+        
+        <attr format="reference" name="popupMenuStyle"/>
+        
+        <attr format="reference" name="popupWindowStyle"/>
+
+        
+        <attr format="reference|color" name="editTextColor"/>
+        
+        <attr format="reference" name="editTextBackground"/>
+
+        
+        <attr format="reference" name="imageButtonStyle"/>
+
+        
+        
+        
+        <eat-comment/>
+        
+        <attr format="reference" name="textAppearanceSearchResultTitle"/>
+        
+        <attr format="reference" name="textAppearanceSearchResultSubtitle"/>
+        
+        <attr format="reference|color" name="textColorSearchUrl"/>
+        
+        <attr format="reference" name="searchViewStyle"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="dimension" name="listPreferredItemHeight"/>
+        
+        <attr format="dimension" name="listPreferredItemHeightSmall"/>
+        
+        <attr format="dimension" name="listPreferredItemHeightLarge"/>
+
+        
+        <attr format="dimension" name="listPreferredItemPaddingLeft"/>
+        
+        <attr format="dimension" name="listPreferredItemPaddingRight"/>
+
+        
+        <attr format="dimension" name="listPreferredItemPaddingStart"/>
+        
+        <attr format="dimension" name="listPreferredItemPaddingEnd"/>
+
+        
+        <attr format="reference" name="dropDownListViewStyle"/>
+        <attr format="reference" name="listPopupWindowStyle"/>
+
+        
+        <attr format="reference" name="textAppearanceListItem"/>
+        
+        <attr format="reference" name="textAppearanceListItemSecondary"/>
+        
+        <attr format="reference" name="textAppearanceListItemSmall"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="panelBackground"/>
+        
+        <attr format="dimension" name="panelMenuListWidth"/>
+        
+        <attr format="reference" name="panelMenuListTheme"/>
+        
+        <attr format="reference" name="listChoiceBackgroundIndicator"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="color" name="colorPrimary"/>
+
+        
+        <attr format="color" name="colorPrimaryDark"/>
+
+        
+        <attr format="color" name="colorAccent"/>
+
+        
+        <attr format="color" name="colorControlNormal"/>
+
+        
+        <attr format="color" name="colorControlActivated"/>
+
+        
+        <attr format="color" name="colorControlHighlight"/>
+
+        
+        <attr format="color" name="colorButtonNormal"/>
+
+        
+        <attr format="color" name="colorSwitchThumbNormal"/>
+
+        
+        <attr format="reference" name="controlBackground"/>
+
+        
+        <attr format="color" name="colorBackgroundFloating"/>
+
+        
+        
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <eat-comment/>
         <attr format="reference" name="alertDialogStyle"/>
         <attr format="reference" name="alertDialogButtonGroupStyle"/>
         <attr format="boolean" name="alertDialogCenterButtons"/>
+<<<<<<< HEAD
         <!-- Theme to use for alert dialogs spawned from this theme. -->
         <attr format="reference" name="alertDialogTheme"/>
 
@@ -5253,10 +6063,74 @@
 
         <!-- Color used for error states and things that need to be drawn to
              the user's attention. -->
+=======
+        
+        <attr format="reference" name="alertDialogTheme"/>
+
+        
+        <attr format="reference|color" name="textColorAlertDialogListItem"/>
+
+        
+        <attr format="reference" name="buttonBarPositiveButtonStyle"/>
+
+        
+        <attr format="reference" name="buttonBarNegativeButtonStyle"/>
+
+        
+        <attr format="reference" name="buttonBarNeutralButtonStyle"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="autoCompleteTextViewStyle"/>
+        
+        <attr format="reference" name="buttonStyle"/>
+        
+        <attr format="reference" name="buttonStyleSmall"/>
+        
+        <attr format="reference" name="checkboxStyle"/>
+        
+        <attr format="reference" name="checkedTextViewStyle"/>
+        
+        <attr format="reference" name="editTextStyle"/>
+        
+        <attr format="reference" name="radioButtonStyle"/>
+        
+        <attr format="reference" name="ratingBarStyle"/>
+        
+        <attr format="reference" name="ratingBarStyleIndicator"/>
+        
+        <attr format="reference" name="ratingBarStyleSmall"/>
+        
+        <attr format="reference" name="seekBarStyle"/>
+        
+        <attr format="reference" name="spinnerStyle"/>
+        
+        <attr format="reference" name="switchStyle"/>
+
+        
+        <attr format="reference" name="listMenuViewStyle"/>
+
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="tooltipFrameBackground"/>
+        
+        <attr format="reference|color" name="tooltipForegroundColor"/>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="reference|color" name="colorError"/>
 
         <attr format="string" name="viewInflaterClass"/>
 
+<<<<<<< HEAD
         <!-- ===================== -->
         <!-- Animated list choice indicators -->
         <!-- ===================== -->
@@ -5706,11 +6580,33 @@
         <!-- Base color for this state. -->
         <attr name="android:color"/>
         <!-- Alpha multiplier applied to the base color. -->
+=======
+        
+        
+        
+        <eat-comment/>
+
+        
+        <attr format="reference" name="listChoiceIndicatorMultipleAnimated"/>
+        
+        <attr format="reference" name="listChoiceIndicatorSingleAnimated"/>
+
+    </declare-styleable>
+    <declare-styleable name="ButtonBarLayout">
+        
+        <attr format="boolean" name="allowStacking"/>
+    </declare-styleable>
+    <declare-styleable name="ColorStateListItem">
+        
+        <attr name="android:color"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="float" name="alpha"/>
         <attr name="android:alpha"/>
     </declare-styleable>
     <declare-styleable name="CompoundButton">
         <attr name="android:button"/>
+<<<<<<< HEAD
         <!-- Compat attr to load backported drawable types -->
         <attr format="reference" name="buttonCompat"/>
         <!-- Tint to apply to the button drawable. -->
@@ -5734,12 +6630,33 @@
             <enum name="screen" value="15"/>
             <!-- Combines the tint and icon color and alpha channels, clamping the
                  result to valid color values. Saturate(S + D) -->
+=======
+        
+        <attr format="reference" name="buttonCompat"/>
+        
+        <attr format="color" name="buttonTint"/>
+
+        
+        <attr name="buttonTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable>
     <declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable>
     <declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable>
+<<<<<<< HEAD
     <declare-styleable name="CoordinatorLayout">
         <!-- A reference to an array of integers representing the
              locations of horizontal keylines in dp from the starting edge.
@@ -5971,17 +6888,61 @@
         <attr format="integer" name="fontProviderFetchTimeout">
             <!-- A special value for the timeout. In this case, the blocking font fetching will not
               timeout and wait until a reply is received from the font provider. -->
+=======
+    <declare-styleable name="DrawerArrowToggle">
+        
+        <attr format="color" name="color"/>
+        
+        <attr format="boolean" name="spinBars"/>
+        
+        <attr format="dimension" name="drawableSize"/>
+        
+        <attr format="dimension" name="gapBetweenBars"/>
+        
+        <attr format="dimension" name="arrowHeadLength"/>
+        
+        <attr format="dimension" name="arrowShaftLength"/>
+        
+        <attr format="dimension" name="barLength"/>
+        
+        <attr format="dimension" name="thickness"/>
+    </declare-styleable>
+    <declare-styleable name="FontFamily">
+        
+        <attr format="string" name="fontProviderAuthority"/>
+        
+        <attr format="string" name="fontProviderPackage"/>
+        
+        <attr format="string" name="fontProviderQuery"/>
+        
+        <attr format="reference" name="fontProviderCerts"/>
+        
+        <attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="fontProviderFetchTimeout">
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="forever" value="-1"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="FontFamilyFont">
+<<<<<<< HEAD
         <!-- The style of the given font file. This will be used when the font is being loaded into
          the font stack and will override any style information in the font's header tables. If
          unspecified, the value in the font's header tables will be used. -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="fontStyle">
             <enum name="normal" value="0"/>
             <enum name="italic" value="1"/>
         </attr>
+<<<<<<< HEAD
         <!-- The reference to the font file to be used. This should be a file in the res/font folder
          and should therefore have an R reference value. E.g. @font/myfont -->
         <attr format="reference" name="font"/>
@@ -6000,12 +6961,24 @@
         tcc format, this attribute needs not be specified. -->
         <attr format="integer" name="ttcIndex"/>
         <!-- References to the framework attrs -->
+=======
+        
+        <attr format="reference" name="font"/>
+        
+        <attr format="integer" name="fontWeight"/>
+        
+        <attr format="string" name="fontVariationSettings"/>
+        
+        <attr format="integer" name="ttcIndex"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="android:fontStyle"/>
         <attr name="android:font"/>
         <attr name="android:fontWeight"/>
         <attr name="android:fontVariationSettings"/>
         <attr name="android:ttcIndex"/>
     </declare-styleable>
+<<<<<<< HEAD
     <declare-styleable name="ForegroundLinearLayout">
     <attr name="android:foreground"/>
     <attr name="android:foregroundGravity"/>
@@ -6091,13 +7064,74 @@
         <!-- Drawable to use as a vertical divider between buttons. -->
         <attr name="divider"/>
         <!-- Setting for which dividers to show. -->
+=======
+    <declare-styleable name="GradientColor">
+        
+        <attr name="android:startColor"/>
+        
+        <attr name="android:centerColor"/>
+        
+        <attr name="android:endColor"/>
+        
+        <attr name="android:type"/>
+
+        
+        
+        <attr name="android:gradientRadius"/>
+
+        
+        
+        <attr name="android:centerX"/>
+        
+        <attr name="android:centerY"/>
+
+        
+        
+        <attr name="android:startX"/>
+        
+        <attr name="android:startY"/>
+        
+        <attr name="android:endX"/>
+        
+        <attr name="android:endY"/>
+
+        
+        <attr name="android:tileMode"/>
+    </declare-styleable>
+    <declare-styleable name="GradientColorItem">
+        
+        <attr name="android:offset"/>
+        
+        <attr name="android:color"/>
+    </declare-styleable>
+    <declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable>
+    <declare-styleable name="LinearLayoutCompat">
+        
+        <attr name="android:orientation"/>
+        <attr name="android:gravity"/>
+        
+        <attr name="android:baselineAligned"/>
+        
+        <attr name="android:baselineAlignedChildIndex"/>
+        
+        <attr name="android:weightSum"/>
+        
+        <attr format="boolean" name="measureWithLargestChild"/>
+        
+        <attr name="divider"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="showDividers">
             <flag name="none" value="0"/>
             <flag name="beginning" value="1"/>
             <flag name="middle" value="2"/>
             <flag name="end" value="4"/>
         </attr>
+<<<<<<< HEAD
         <!-- Size of padding on either end of a divider. -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="dimension" name="dividerPadding"/>
     </declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout">
@@ -6107,6 +7141,7 @@
         <attr name="android:layout_gravity"/>
     </declare-styleable>
     <declare-styleable name="ListPopupWindow">
+<<<<<<< HEAD
         <!-- Amount of pixels by which the drop down should be offset vertically. -->
         <attr name="android:dropDownVerticalOffset"/>
         <!-- Amount of pixels by which the drop down should be offset horizontally. -->
@@ -6299,11 +7334,37 @@
         <attr name="android:visible"/>
 
         <!-- Whether the items are enabled. -->
+=======
+        
+        <attr name="android:dropDownVerticalOffset"/>
+        
+        <attr name="android:dropDownHorizontalOffset"/>
+    </declare-styleable>
+    <declare-styleable name="MenuGroup">
+
+        
+        <attr name="android:id"/>
+
+        
+        <attr name="android:menuCategory"/>
+
+        
+        <attr name="android:orderInCategory"/>
+
+        
+        <attr name="android:checkableBehavior"/>
+
+        
+        <attr name="android:visible"/>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="android:enabled"/>
 
     </declare-styleable>
     <declare-styleable name="MenuItem">
 
+<<<<<<< HEAD
         <!-- The ID of the item. -->
         <attr name="android:id"/>
 
@@ -6332,6 +7393,30 @@
 
         <!-- The alphabetic modifier key. This is the modifier when using a keyboard
             with alphabetic keys. The values should be kept in sync with KeyEvent -->
+=======
+        
+        <attr name="android:id"/>
+
+        
+        <attr name="android:menuCategory"/>
+
+        
+        <attr name="android:orderInCategory"/>
+
+        
+        <attr name="android:title"/>
+
+        
+        <attr name="android:titleCondensed"/>
+
+        
+        <attr name="android:icon"/>
+
+        
+        <attr name="android:alphabeticShortcut"/>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="alphabeticModifiers">
             <flag name="META" value="0x10000"/>
             <flag name="CTRL" value="0x1000"/>
@@ -6341,12 +7426,19 @@
             <flag name="FUNCTION" value="0x8"/>
         </attr>
 
+<<<<<<< HEAD
         <!-- The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
              keyboard. -->
         <attr name="android:numericShortcut"/>
 
         <!-- The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
             keyboard. The values should be kept in sync with KeyEvent -->
+=======
+        
+        <attr name="android:numericShortcut"/>
+
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="numericModifiers">
             <flag name="META" value="0x10000"/>
             <flag name="CTRL" value="0x1000"/>
@@ -6356,6 +7448,7 @@
             <flag name="FUNCTION" value="0x8"/>
         </attr>
 
+<<<<<<< HEAD
         <!-- Whether the item is capable of displaying a check mark. -->
         <attr name="android:checkable"/>
 
@@ -6439,11 +7532,74 @@
             <enum name="screen" value="15"/>
             <!-- Combines the tint and icon color and alpha channels, clamping the
                  result to valid color values. Saturate(S + D) -->
+=======
+        
+        <attr name="android:checkable"/>
+
+        
+        <attr name="android:checked"/>
+
+        
+        <attr name="android:visible"/>
+
+        
+        <attr name="android:enabled"/>
+
+        
+        <attr name="android:onClick"/>
+
+        
+        <attr name="showAsAction">
+            
+            <flag name="never" value="0"/>
+            
+            <flag name="ifRoom" value="1"/>
+            
+            <flag name="always" value="2"/>
+            
+            <flag name="withText" value="4"/>
+            
+            <flag name="collapseActionView" value="8"/>
+        </attr>
+
+        
+        <attr format="reference" name="actionLayout"/>
+
+        
+        <attr format="string" name="actionViewClass"/>
+
+        
+        <attr format="string" name="actionProviderClass"/>
+
+        
+        <attr format="string" name="contentDescription"/>
+
+        
+        <attr format="string" name="tooltipText"/>
+
+        
+        <attr format="color" name="iconTint"/>
+
+        
+        <attr name="iconTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+>>>>>>> parent of fd1e0d8... Pdf read
             <enum name="add" value="16"/>
         </attr>
 
     </declare-styleable>
     <declare-styleable name="MenuView">
+<<<<<<< HEAD
         <!-- Default appearance of menu item text. -->
         <attr name="android:itemTextAppearance"/>
         <!-- Default horizontal divider between rows of menu items. -->
@@ -6513,11 +7669,35 @@
   </declare-styleable>
     <declare-styleable name="PopupWindow">
         <!-- Whether the popup window should overlap its anchor view. -->
+=======
+        
+        <attr name="android:itemTextAppearance"/>
+        
+        <attr name="android:horizontalDivider"/>
+        
+        <attr name="android:verticalDivider"/>
+        
+        <attr name="android:headerBackground"/>
+        
+        <attr name="android:itemBackground"/>
+        
+        <attr name="android:windowAnimationStyle"/>
+        
+        <attr name="android:itemIconDisabledAlpha"/>
+        
+        <attr format="boolean" name="preserveIconSpacing"/>
+        
+        <attr format="reference" name="subMenuArrow"/>
+    </declare-styleable>
+    <declare-styleable name="PopupWindow">
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="boolean" name="overlapAnchor"/>
         <attr name="android:popupBackground"/>
         <attr name="android:popupAnimationStyle"/>
     </declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState">
+<<<<<<< HEAD
         <!-- State identifier indicating the popup will be above the anchor. -->
         <attr format="boolean" name="state_above_anchor"/>
     </declare-styleable>
@@ -6926,6 +8106,140 @@
          tab item bounds. -->
     <attr format="boolean" name="tabUnboundedRipple"/>
   </declare-styleable>
+=======
+        
+        <attr format="boolean" name="state_above_anchor"/>
+    </declare-styleable>
+    <declare-styleable name="RecycleListView">
+        
+        <attr format="dimension" name="paddingBottomNoButtons"/>
+        
+        <attr format="dimension" name="paddingTopNoTitle"/>
+    </declare-styleable>
+    <declare-styleable name="SearchView">
+        
+        <attr format="reference" name="layout"/>
+        
+        <attr format="boolean" name="iconifiedByDefault"/>
+        
+        <attr name="android:maxWidth"/>
+        
+        <attr format="string" name="queryHint"/>
+        
+        <attr format="string" name="defaultQueryHint"/>
+        
+        <attr name="android:imeOptions"/>
+        
+        <attr name="android:inputType"/>
+        
+        <attr format="reference" name="closeIcon"/>
+        
+        <attr format="reference" name="goIcon"/>
+        
+        <attr format="reference" name="searchIcon"/>
+        
+        <attr format="reference" name="searchHintIcon"/>
+        
+        <attr format="reference" name="voiceIcon"/>
+        
+        <attr format="reference" name="commitIcon"/>
+        
+        <attr format="reference" name="suggestionRowLayout"/>
+        
+        <attr format="reference" name="queryBackground"/>
+        
+        <attr format="reference" name="submitBackground"/>
+        <attr name="android:focusable"/>
+    </declare-styleable>
+    <declare-styleable name="Spinner">
+        
+        <attr name="android:prompt"/>
+        
+        <attr name="popupTheme"/>
+        
+        <attr name="android:popupBackground"/>
+        
+        <attr name="android:dropDownWidth"/>
+        
+        <attr name="android:entries"/>
+    </declare-styleable>
+    <declare-styleable name="StateListDrawable">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable>
+    <declare-styleable name="StateListDrawableItem">
+        
+        <attr name="android:drawable"/>
+    </declare-styleable>
+    <declare-styleable name="SwitchCompat">
+        
+        <attr name="android:thumb"/>
+        
+        <attr format="color" name="thumbTint"/>
+        
+        <attr name="thumbTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr format="reference" name="track"/>
+        
+        <attr format="color" name="trackTint"/>
+        
+        <attr name="trackTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr name="android:textOn"/>
+        
+        <attr name="android:textOff"/>
+        
+        <attr format="dimension" name="thumbTextPadding"/>
+        
+        <attr format="reference" name="switchTextAppearance"/>
+        
+        <attr format="dimension" name="switchMinWidth"/>
+        
+        <attr format="dimension" name="switchPadding"/>
+        
+        <attr format="boolean" name="splitTrack"/>
+        
+        <attr format="boolean" name="showText"/>
+    </declare-styleable>
+>>>>>>> parent of fd1e0d8... Pdf read
     <declare-styleable name="TextAppearance">
         <attr name="android:textSize"/>
         <attr name="android:textColor"/>
@@ -6937,16 +8251,21 @@
         <attr name="android:fontFamily"/>
         <attr name="fontFamily"/>
         <attr name="textAllCaps"/>
+<<<<<<< HEAD
         <!-- Set the textLocale by a comma-separated language tag string,
              for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
              Before API 24, only the first language tag is used. Starting from API 24,
              the string will be converted into a {@link android.os.LocaleList} and then used by
              {@link android.widget.TextView} -->
+=======
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="textLocale"/>
         <attr name="android:shadowColor"/>
         <attr name="android:shadowDy"/>
         <attr name="android:shadowDx"/>
         <attr name="android:shadowRadius"/>
+<<<<<<< HEAD
         <!-- OpenType font variation settings, available aftear api 26. -->
         <attr name="fontVariationSettings"/>
     </declare-styleable>
@@ -7211,12 +8530,18 @@
     <!-- Attribute used to check that a component has a TextAppearance specified on it. -->
     <attr name="android:textAppearance"/>
   </declare-styleable>
+=======
+        
+        <attr name="fontVariationSettings"/>
+    </declare-styleable>
+>>>>>>> parent of fd1e0d8... Pdf read
     <declare-styleable name="Toolbar">
         <attr format="reference" name="titleTextAppearance"/>
         <attr format="reference" name="subtitleTextAppearance"/>
         <attr name="title"/>
         <attr name="subtitle"/>
         <attr name="android:gravity"/>
+<<<<<<< HEAD
         <!--  Specifies extra space on the left, start, right and end sides
               of the toolbar's title. Margin values should be positive. -->
         <attr format="dimension" name="titleMargin"/>
@@ -7237,6 +8562,19 @@
               attribute takes precedence. Margin values should be positive. -->
         <attr format="dimension" name="titleMarginBottom"/>
         <!-- {@deprecated Use titleMargin} -->
+=======
+        
+        <attr format="dimension" name="titleMargin"/>
+        
+        <attr format="dimension" name="titleMarginStart"/>
+        
+        <attr format="dimension" name="titleMarginEnd"/>
+        
+        <attr format="dimension" name="titleMarginTop"/>
+        
+        <attr format="dimension" name="titleMarginBottom"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr format="dimension" name="titleMargins"/>
         <attr name="contentInsetStart"/>
         <attr name="contentInsetEnd"/>
@@ -7246,6 +8584,7 @@
         <attr name="contentInsetEndWithActions"/>
         <attr format="dimension" name="maxButtonHeight"/>
         <attr name="buttonGravity">
+<<<<<<< HEAD
             <!-- Place object in the vertical center of its container, not changing its size. -->
             <flag name="center_vertical" value="0x10"/>
             <!-- Push object to the top of its container, not changing its size. -->
@@ -7306,10 +8645,52 @@
         <!-- Specifies a theme override for a view. When a theme override is set, the
              view will be inflated using a {@link android.content.Context} themed with
              the specified resource. -->
+=======
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+        </attr>
+        
+        <attr format="reference" name="collapseIcon"/>
+        
+        <attr format="string" name="collapseContentDescription"/>
+        
+        <attr name="popupTheme"/>
+        
+        <attr format="reference" name="navigationIcon"/>
+        
+        <attr format="string" name="navigationContentDescription"/>
+        
+        <attr name="logo"/>
+        
+        <attr format="string" name="logoDescription"/>
+        
+        <attr format="color" name="titleTextColor"/>
+        
+        <attr format="color" name="subtitleTextColor"/>
+        <attr name="android:minHeight"/>
+        
+        <attr format="reference" name="menu"/>
+    </declare-styleable>
+    <declare-styleable name="View">
+        
+        <attr format="dimension" name="paddingStart"/>
+        
+        <attr format="dimension" name="paddingEnd"/>
+        
+        <attr name="android:focusable"/>
+        
+        <attr format="reference" name="theme"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="android:theme"/>
     </declare-styleable>
     <declare-styleable name="ViewBackgroundHelper">
         <attr name="android:background"/>
+<<<<<<< HEAD
         <!-- Tint to apply to the background. -->
         <attr format="color" name="backgroundTint"/>
 
@@ -7343,6 +8724,31 @@
              valid reference to a layout. -->
         <attr name="android:layout"/>
         <!-- Overrides the id of the inflated View with this value. -->
+=======
+        
+        <attr format="color" name="backgroundTint"/>
+
+        
+        <attr name="backgroundTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewStubCompat">
+        
+        <attr name="android:layout"/>
+        
+>>>>>>> parent of fd1e0d8... Pdf read
         <attr name="android:inflatedId"/>
         <attr name="android:id"/>
     </declare-styleable>

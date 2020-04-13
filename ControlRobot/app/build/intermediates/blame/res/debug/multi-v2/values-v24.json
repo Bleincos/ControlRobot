@@ -20,6 +20,7 @@
                         "endOffsets": "207,342"
                     }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\olivi\\.gradle\\caches\\transforms-2\\files-2.1\\e6db2a8ebafb4101960628e4b20a9462\\media-1.0.0\\res\\values-v24\\values-v24.xml",
@@ -39,6 +40,8 @@
                     }
 =======
 >>>>>>> master
+=======
+>>>>>>> parent of fd1e0d8... Pdf read
                 }
             ]
         }
