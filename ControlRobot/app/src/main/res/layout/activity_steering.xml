@@ -18,21 +18,14 @@
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.22000003">
 
         <ImageButton
-<<<<<<< HEAD
             android:id="@+id/imageButton"
             android:layout_width="123dp"
             android:layout_height="74dp"
-            android:contentDescription="@string/todo" />
-=======
-            android:id="@+id/imageButton8"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/Circle_arrow"
+            android:background="@drawable/circle_arrow"
             android:baselineAligned="false"
             android:orientation="horizontal"
             android:padding="30dp"
@@ -43,7 +36,7 @@
             android:id="@+id/imageButton9"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/Circle_arrow"
+            android:background="@drawable/circle_arrow"
             android:padding="30dp"
             android:text="Round Corner"
             android:textColor="#FFF" />
@@ -52,30 +45,20 @@
             android:id="@+id/imageButton3"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/Circle_arrow"
+            android:background="@drawable/circle_arrow"
             android:padding="30dp"
             android:text="Round Corner"
             android:textColor="#FFF" />
-=======
-        app:layout_constraintRight_toRightOf="parent"
+
+        <app:layout_constraintRight_toRightOf<![CDATA[="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.142">
->>>>>>> parent of d2a5904... màj
+        app:layout_constraintVertical_bias="0.142">parent of d2a5904
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="144dp"
-            android:layout_height="106dp"
-            android:background="@drawable/circle"
-            android:textColor="#FFF"
-            android:text="Round Corner"
-<<<<<<< HEAD
-            android:textColor="#FFF" />
 
->>>>>>> master
-=======
-            app:srcCompat="@drawable/Circle_arrow" />
->>>>>>> parent of d2a5904... màj
+            ]]>
+
+
+        <app:srcCompat="@drawable/Circle_arrow" />
     </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
