@@ -109,6 +109,7 @@
 28            </intent-filter>
 29        </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
 30    </application>
 31
 32</manifest>
@@ -160,6 +161,8 @@
 33</manifest>
 >>>>>>> parent of fd1e0d8... Pdf read
 =======
+=======
+>>>>>>> parent of d2a5904... màj
 30
 31        <style
 31-->D:\Logiciels\Android studio\ControlRobot\ControlRobot\app\src\main\AndroidManifest.xml:22:9-24:17
@@ -173,4 +176,7 @@
 37    </application>
 38
 39</manifest>
+<<<<<<< HEAD
+>>>>>>> parent of d2a5904... màj
+=======
 >>>>>>> parent of d2a5904... màj

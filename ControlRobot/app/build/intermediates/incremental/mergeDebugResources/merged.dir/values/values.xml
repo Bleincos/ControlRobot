@@ -954,6 +954,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         <item name="colorSecondary">@color/my_app_secondary_color</item>
         <item name="android:colorBackground">@color/my_app_background_color</item>
@@ -1000,6 +1001,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 >>>>>>> parent of fd1e0d8... Pdf read
+=======
+>>>>>>> parent of d2a5904... màj
 =======
 >>>>>>> parent of d2a5904... màj
     </style>
@@ -3820,11 +3823,14 @@
     <item name="windowNoTitle">true</item>
   </style>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight">
         <!-- ... -->
     </style>
 =======
 >>>>>>> parent of fd1e0d8... Pdf read
+=======
+>>>>>>> parent of d2a5904... màj
 =======
 >>>>>>> parent of d2a5904... màj
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
