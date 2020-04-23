@@ -26,4 +26,5 @@
     <string name="arrowBackward">arrow down</string>
     <string name="arrowRight">arrow right</string>
     <string name="text2edit">text2edit</string>
+    <string name="speed">The speed is set to : 0</string>
 </resources>

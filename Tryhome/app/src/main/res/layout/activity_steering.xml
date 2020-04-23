@@ -117,11 +117,29 @@
 
     <SeekBar
         android:id="@+id/velocity"
-        android:layout_width="171dp"
-        android:layout_height="170dp"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="185dp"
+        android:layout_height="79dp"
         android:orientation="vertical"
+        android:rotation="270"
+        android:thumb="@android:drawable/radiobutton_off_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toEndOf="@+id/tableRow"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/velocityValue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/speed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="@+id/velocity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

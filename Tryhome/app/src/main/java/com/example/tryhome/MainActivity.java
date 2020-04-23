@@ -37,10 +37,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            checkBTPermissions();
-            getPermissionBrightness();
-        }
+
         Button about, roundCorner;
         showInstruction = findViewById(R.id.buttonInstructions2);
         roundCorner = findViewById(R.id.rou);
@@ -108,43 +105,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     *
-     */
-    private void getPermissionBrightness() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            bool = android.provider.Settings.System.canWrite(getApplicationContext());
-            if (bool) {
-                success = true;
-            } else {
-                Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
-                intent.setData(Uri.parse("package:" + getApplicationContext().getPackageName()));
-                startActivityForResult(intent, 1000);
-            }
-        }
-
-    }
-
-    /**
-     *
-     * @param requestCode
-     * @param resultCode
-     * @param data
-     */
-    @Override
-    protected void onActivityResult( int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1000) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                bool = android.provider.Settings.System.canWrite(getApplicationContext());
-                if (bool) {
-                    success = true;
-                } else {
-                    Toast.makeText(this, "Permission not granted", Toast.LENGTH_SHORT).show();
-                    ;
-                }
-            }
-        }
-    }
 }

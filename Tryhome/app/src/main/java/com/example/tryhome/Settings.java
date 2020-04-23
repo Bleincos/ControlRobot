@@ -39,22 +39,22 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.UUID;
 
-public class Settings extends AppCompatActivity implements SensorEventListener{
-    private static int valueMaxBrg=4096; // For the dev's device set it to 4096 for emulation set it to 255
+public class Settings extends AppCompatActivity implements SensorEventListener {
+    private static int valueMaxBrg = 4096; // For the dev's device set it to 4096 for emulation set it to 255
     /**
-    Variables
+     * Variables
      */
     public BluetoothConnectionService bluetoothConnection;
 
-    public ArrayList <BluetoothDevice> devices = new ArrayList<>();
-    public ArrayList <BluetoothDevice> devicesAppaired = new ArrayList<>();
+    public ArrayList<BluetoothDevice> devices = new ArrayList<>();
+    public ArrayList<BluetoothDevice> devicesAppaired = new ArrayList<>();
     private TextView textViewBT;
     private TextView textViewListBTAppaired;
     private BluetoothAdapter bluetoothAdapter;
     private Button buttonsearch;
 
     private BroadcastReceiver broadcastReceiver;
-    private Boolean isBroadcastRegsitered=false;
+    private Boolean isBroadcastRegsitered = false;
     private Button back2;
 
     public BluetoothDevice device;
@@ -65,12 +65,12 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     public CheckBox boxAuto;
     public SensorManager mySensorManager;
-    public  Sensor sensorLight;
+    public Sensor sensorLight;
 
-    private Boolean success =false, bool;
-    private int brightness=0;
+    private Boolean success = false, bool;
+    private int brightness = 0;
 
-    private final static int REQUEST_ENABLE_BLUETOOTH=1;
+    private final static int REQUEST_ENABLE_BLUETOOTH = 1;
     private SeekBar seekBar;
 
     private Button send;
@@ -79,6 +79,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     /**
      * This is the elemens call when the activity is create, the listenners and initialisations will be there or called from here
+     *
      * @param savedInstanceState
      */
     @Override
@@ -86,7 +87,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
         super.onCreate(savedInstanceState);
 
         if (Build.VERSION.SDK_INT >= VERSION_CODES.M) {
-            //checkBTPermissions();
+            checkBTPermissions();
             getPermissionBrightness();
             checkSensor();
         }
@@ -97,7 +98,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
         this.activity = this;
 
         /**
-        SeekBar Part
+         SeekBar Part
          */
         seekBar = findViewById(R.id.brightnessBar);
         seekBar.setMax(valueMaxBrg);
@@ -105,24 +106,28 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
         seekBar.setKeyProgressIncrement(1);
 
         /**
-        Sensors part
-        */
+         Sensors part
+         */
         boxAuto = findViewById(R.id.autoLight);
         boxAuto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(boxAuto.isChecked()){
+                if (boxAuto.isChecked()&& success) {
                     Toast.makeText(Settings.this, "The brightness will be set automatically", Toast.LENGTH_LONG).show();
                     mySensorManager.registerListener(/*(SensorEventListener)*/ Settings.this, sensorLight, mySensorManager.SENSOR_DELAY_NORMAL);
 
-                }else{
-                    mySensorManager.unregisterListener(Settings.this);
+                } else {
+                    if (success) {
+                        mySensorManager.unregisterListener(Settings.this);
+                    }else{
+                        Toast.makeText(Settings.this, "Permissions aren't granted", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
 
         /**
-        User Interface Part
+         User Interface Part
          */
         deviceList = findViewById(R.id.listViewBTSearch);
         deviceAppairedList = findViewById(R.id.listViewBTAppaired);
@@ -134,10 +139,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
         deviceList.setAdapter(adapter);
         adapter2 = new BluetoothArrayAdapter(this, R.layout.bt_devices, devicesAppaired);
         deviceAppairedList.setAdapter(adapter2);
-        //updateListViewMain();
         /**
-        Bluetooth Part
-        */
+         Bluetooth Part
+         */
         send = findViewById(R.id.buttonSend);
         edit2text = findViewById(R.id.editBT);
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -145,10 +149,10 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
             @Override
             public void onReceive(Context context, Intent intent) {
                 if (bluetoothAdapter.ACTION_STATE_CHANGED.equals(intent.getAction())) {
-                    if(intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_OFF){
+                    if (intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_OFF) {
                         buttonsearch.setEnabled(false);
                         Toast.makeText(getApplicationContext(), "The broadcast on BT changing works", Toast.LENGTH_SHORT).show();
-                    }else{
+                    } else {
                         buttonsearch.setEnabled(true);
                     }
                     Toast.makeText(getApplicationContext(), "State change", Toast.LENGTH_SHORT).show();//bluetooth not supported
@@ -187,34 +191,34 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                 textViewBT.setText("Bluetooth module available, please turn it on then go back to the main menu and reload the settings");
                 Intent enableBluetooth = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(enableBluetooth, REQUEST_ENABLE_BLUETOOTH);
-                if(!bluetoothAdapter.isEnabled()){
+                if (!bluetoothAdapter.isEnabled()) {
                     buttonsearch.setEnabled(false);
-                }else{
+                } else {
                     buttonsearch.setEnabled(true);
                 }
             }
         }
 
-            buttonsearch.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        buttonsearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-                    if (bluetoothAdapter.isDiscovering() == Boolean.TRUE) {
-                        bluetoothAdapter.cancelDiscovery();
-                        textViewBT.setText("Search canceled");
-                        updateListViewMain();
+                if (bluetoothAdapter.isDiscovering() == Boolean.TRUE) {
+                    bluetoothAdapter.cancelDiscovery();
+                    textViewBT.setText("Search canceled");
+                    updateListViewMain();
 
-                    } else {
-                        devices.clear();
-                        bluetoothAdapter.startDiscovery();
-                        textViewBT.setText("Search in progress...");
-                        registerReceiver(broadcastReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
-                        registerReceiver(broadcastReceiver, new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED));
-                        registerReceiver(broadcastReceiver, new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED));
+                } else {
+                    devices.clear();
+                    bluetoothAdapter.startDiscovery();
+                    textViewBT.setText("Search in progress...");
+                    registerReceiver(broadcastReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
+                    registerReceiver(broadcastReceiver, new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED));
+                    registerReceiver(broadcastReceiver, new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED));
 
-                    }
                 }
-            });
+            }
+        });
 
         if ((bluetoothAdapter != null) && (bluetoothAdapter.isEnabled())) {
             Set<BluetoothDevice> periphAppaires = bluetoothAdapter.getBondedDevices();
@@ -241,7 +245,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
              */
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser && success){
+                if (fromUser && success) {
                     setBrightness(progress);
                 }
             }
@@ -261,13 +265,15 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
              */
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                if(!success){
-                    Toast.makeText(Settings.this, "Permission Not granted", Toast.LENGTH_SHORT).show();;
+                if (!success) {
+                    Toast.makeText(Settings.this, "Permission Not granted", Toast.LENGTH_SHORT).show();
+                    ;
                 }
             }
         });
-        setBrightness(200);
-
+        if(success) {
+            setBrightness(200);
+        }
         deviceList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @RequiresApi(api = VERSION_CODES.KITKAT)
             @Override
@@ -280,33 +286,32 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
                 Log.d("Settings_Pairing", "onItemClick: deviceName = " + deviceName);
                 Log.d("Settings_Pairing", "onItemClick: deviceAddress = " + deviceAddress);
-                if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2) {
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2) {
                     Log.d("Settings_Pairing", "Trying to pair with " + devices.get(position).getName());
                     devices.get(position).createBond();
                     device = devices.get(position);
-                    if(device.getBondState()==12){
-                        Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has been paired successfully", Toast.LENGTH_SHORT).show();
+                    if (device.getBondState() == 12) {
+                        Toast.makeText(getApplicationContext(), "Your device :" + device.getName() + " has been paired successfully", Toast.LENGTH_SHORT).show();
 
-                    }else{
-                        if(device.getBondState()==11){
-                            Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " is pairing", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
-                            Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has not been paired", Toast.LENGTH_SHORT).show();
+                    } else {
+                        if (device.getBondState() == 11) {
+                            Toast.makeText(getApplicationContext(), "Your device :" + device.getName() + " is pairing", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Your device :" + device.getName() + " has not been paired", Toast.LENGTH_SHORT).show();
 
                         }
                     }
                     //bluetoothConnection = new BluetoothConnectionService(Settings.this);
 
                     //Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has been paired unless the user said no", Toast.LENGTH_SHORT).show();
-                    if((device.getName().equals("RNBT-1100") /*the following par is ONLY for testing */ || (device.getName().equals("olivier")))){    //RNBT-1100 is the name of the bluetooth module on the robot
+                    if ((device.getName().equals("RNBT-1100") /*the following par is ONLY for testing */ || (device.getName().equals("olivier")))) {    //RNBT-1100 is the name of the bluetooth module on the robot
                         AlertDialog.Builder myPopup = new AlertDialog.Builder(activity);
-                        myPopup.setTitle("You selected : "+device.getName());
+                        myPopup.setTitle("You selected : " + device.getName());
                         myPopup.setMessage("Would you like to open the control menu of the reobot?");
                         myPopup.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(getApplicationContext(),"Clicked 'Yes'", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Clicked 'Yes'", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Settings.this, Steering.class);
                                 startActivity(intent);
                                 finish();
@@ -315,7 +320,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                         myPopup.setNegativeButton("No", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(getApplicationContext(),"Clicked 'No'", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Clicked 'No'", Toast.LENGTH_SHORT).show();
                             }
                         });
                         myPopup.show();
@@ -324,7 +329,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                 }
                 return true;
             }
-            });
+        });
         /**
          * test part to communication BT
          */
@@ -338,47 +343,49 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     /**
      * This function interact with the system to adjust the brightness of the screen
+     *
      * @param brightnessLocal the value we want to assing to the brightness
      */
-    public void setBrightness(int brightnessLocal){
-    if(brightnessLocal < 0){
-        brightnessLocal = 0;
-    }else{
-        if(brightnessLocal > valueMaxBrg){
-            brightnessLocal = valueMaxBrg;
+    public void setBrightness(int brightnessLocal) {
+        if (brightnessLocal < 0) {
+            brightnessLocal = 0;
+        } else {
+            if (brightnessLocal > valueMaxBrg) {
+                brightnessLocal = valueMaxBrg;
+            }
         }
-    }
         ContentResolver contentResolver = getApplicationContext().getContentResolver();
-    android.provider.Settings.System.putInt(contentResolver, android.provider.Settings.System.SCREEN_BRIGHTNESS, brightnessLocal);
-    //seekBar.setProgress(getBrightness());
+        android.provider.Settings.System.putInt(contentResolver, android.provider.Settings.System.SCREEN_BRIGHTNESS, brightnessLocal);
+        //seekBar.setProgress(getBrightness());
     }
 
     /**
      * This function allows to know the value of the brightness of the screen
+     *
      * @return the value of the brightness
      */
-    public int getBrightness(){
-        try{
-        ContentResolver contentResolver = getApplicationContext().getContentResolver();
-        brightness = android.provider.Settings.System.getInt(contentResolver, android.provider.Settings.System.SCREEN_BRIGHTNESS);
-    }catch (android.provider.Settings.SettingNotFoundException e){
-        e.printStackTrace();
-    }
+    public int getBrightness() {
+        try {
+            ContentResolver contentResolver = getApplicationContext().getContentResolver();
+            brightness = android.provider.Settings.System.getInt(contentResolver, android.provider.Settings.System.SCREEN_BRIGHTNESS);
+        } catch (android.provider.Settings.SettingNotFoundException e) {
+            e.printStackTrace();
+        }
         return brightness;
     }
 
     /**
      * Check the permission to deals with the brightness of the screen
      */
-    private void getPermissionBrightness(){
+    private void getPermissionBrightness() {
 
-        if(Build.VERSION.SDK_INT >= VERSION_CODES.M){
+        if (Build.VERSION.SDK_INT >= VERSION_CODES.M) {
             bool = android.provider.Settings.System.canWrite(getApplicationContext());
-            if (bool){
+            if (bool) {
                 success = true;
-            }else{
+            } else {
                 Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
-                intent.setData(Uri.parse("package:"+ getApplicationContext().getPackageName()));
+                intent.setData(Uri.parse("package:" + getApplicationContext().getPackageName()));
                 startActivityForResult(intent, 1000);
             }
         }
@@ -386,12 +393,13 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     /**
      * This functions deals with the
+     *
      * @param requestCode the code request
-     * @param resultCode the resultCode
-     * @param data an intent
+     * @param resultCode  the resultCode
+     * @param data        an intent
      */
     @Override
-    protected void onActivityResult( int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1000) {
             if (Build.VERSION.SDK_INT >= VERSION_CODES.M) {
@@ -410,14 +418,13 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
      * Check if the permission for bluetooth are corrects
      */
     @RequiresApi(api = VERSION_CODES.M)
-    private void checkBTPermissions(){
-        if(Build.VERSION.SDK_INT> VERSION_CODES.LOLLIPOP){
-            int permissionCheck  =  this.checkSelfPermission("Manisfest.permission.ACCESS_FINE_LOCATION");
+    private void checkBTPermissions() {
+        if (Build.VERSION.SDK_INT > VERSION_CODES.LOLLIPOP) {
+            int permissionCheck = this.checkSelfPermission("Manisfest.permission.ACCESS_FINE_LOCATION");
             permissionCheck += this.checkSelfPermission("Manifest.permission.ACCESS_COARSE_LOCATION");
             if (permissionCheck != 0) {
                 this.requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1001);
-            }
-            else{
+            } else {
                 Log.d("Settings", "Check permission for BT");
             }
         }
@@ -425,13 +432,14 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     /**
      * Check if there is a bluetooth module on the device
+     *
      * @return true if there is a bluetooth module, false if there is no bluetooth module
      */
-    private boolean checkForBTModule(){
+    private boolean checkForBTModule() {
         Boolean module;
-        if(bluetoothAdapter == null){
+        if (bluetoothAdapter == null) {
             module = false;
-        }else{
+        } else {
             module = true;
         }
         return module;
@@ -441,19 +449,19 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
      * This function refresh the adapter with the news items in the lists
      * Should bettre call .notifyDataSetChanged on the lists
      */
-     public void updateListViewMain() {
+    public void updateListViewMain() {
 
         adapter = new BluetoothArrayAdapter(this, R.layout.bt_devices, devices);
         deviceList.setAdapter(adapter);
         adapter2 = new BluetoothArrayAdapter(this, R.layout.bt_devices, devicesAppaired);
-         deviceAppairedList.setAdapter(adapter2);
+        deviceAppairedList.setAdapter(adapter2);
     }
 
     /**
      * What has to be done when the application is paused
      */
     @Override
-    protected  void onPause() {
+    protected void onPause() {
         super.onPause();
         mySensorManager.unregisterListener((SensorEventListener) this);
     }
@@ -470,15 +478,14 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
     /**
      * check if the sensor (Light sensor) is avaible on the device and block the Automod if there is no light sensor
      */
-    public void checkSensor(){
+    public void checkSensor() {
         mySensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorLight = mySensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-        if(sensorLight == null){
+        if (sensorLight == null) {
             Toast.makeText(this, "No light sensor found", Toast.LENGTH_SHORT).show();
             boxAuto.setChecked(false);
             boxAuto.setActivated(false);
-        }
-        else{
+        } else {
             Toast.makeText(this, "Light sensor found", Toast.LENGTH_SHORT).show();
             mySensorManager.unregisterListener(Settings.this);
 
@@ -489,29 +496,30 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
      * Implements what we do when the activity is destroyed (finished)
      */
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.d("Settings","On destroy called");
-        if(!checkForBTModule() || !isBroadcastRegsitered){
+        Log.d("Settings", "On destroy called");
+        if (!checkForBTModule() || !isBroadcastRegsitered) {
 
-        }else {
-            if(bluetoothAdapter.isDiscovering()){
+        } else {
+            if (bluetoothAdapter.isDiscovering()) {
                 bluetoothAdapter.cancelDiscovery();
             }
             unregisterReceiver(broadcastReceiver);
-            isBroadcastRegsitered=false;
+            isBroadcastRegsitered = false;
         }
 
     }
 
     /**
      * Implements the changes when the Light sensor change
+     *
      * @param event is the event when the sensors change
      */
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.sensor.getType()==Sensor.TYPE_LIGHT){
-            if(boxAuto.isChecked()) {
+        if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            if (boxAuto.isChecked()) {
                 brightness = (int) (event.values[0]); // convert value, Max is 40 000 and max brightness is 255 for the emulated device so 40 000/ 255 equals to 156.8627 40 000/4096 equals 9.765625
                 setBrightness(brightness);
                 seekBar.setProgress(getBrightness());
@@ -521,31 +529,11 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
 
     /**
      * Function not used, to do something when the accuracy or precision of a sensor change
-     * @param sensor the sensor
+     *
+     * @param sensor   the sensor
      * @param accuracy its accuracy
      */
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-
-    /**
-     * Function to link two devices when the user select it from a list
-     * @param adapterView To adapt the view
-     * @param view The view of the list
-     * @param i indice of the list
-     * @param l the lengh
-     * */
-    /*
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
-        if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
-            Log.d( ""+getApplicationContext(), "Trying to pair with " + devices.get(i).getName());
-            Toast.makeText(this, "Item Clicked", Toast.LENGTH_SHORT).show();
-            devices.get(i).createBond();
-            device = devices.get(i);
-        }
-    }
-
-     */
-
 }
