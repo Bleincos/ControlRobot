@@ -25,6 +25,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SeekBar;
@@ -43,7 +44,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
     /**
     Variables
      */
-    private     BluetoothConnectionService bluetoothConnection;
+    public BluetoothConnectionService bluetoothConnection;
 
     public ArrayList <BluetoothDevice> devices = new ArrayList<>();
     public ArrayList <BluetoothDevice> devicesAppaired = new ArrayList<>();
@@ -55,7 +56,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
     private BroadcastReceiver broadcastReceiver;
     private Boolean isBroadcastRegsitered=false;
     private Button back2;
-    private BluetoothDevice device;
+
+    public BluetoothDevice device;
+
     public ListView deviceList;
     public ListView deviceAppairedList;
     public BluetoothArrayAdapter adapter, adapter2;
@@ -70,7 +73,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
     private final static int REQUEST_ENABLE_BLUETOOTH=1;
     private SeekBar seekBar;
 
+    private Button send;
     private Activity activity;
+    private EditText edit2text;
 
     /**
      * This is the elemens call when the activity is create, the listenners and initialisations will be there or called from here
@@ -133,6 +138,8 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
         /**
         Bluetooth Part
         */
+        send = findViewById(R.id.buttonSend);
+        edit2text = findViewById(R.id.editBT);
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         broadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -276,11 +283,23 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                 if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2) {
                     Log.d("Settings_Pairing", "Trying to pair with " + devices.get(position).getName());
                     devices.get(position).createBond();
-
                     device = devices.get(position);
-                    bluetoothConnection = new BluetoothConnectionService(Settings.this);
-                    Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + "has been paired unless the pins are refuse", Toast.LENGTH_SHORT).show();
-                    if(device.getName() == "RNBT-1100"|| device.getName() == "SURFACE-OLIVIER"){    //RNBT-1100 is the name of the bluetooth module on the robot
+                    if(device.getBondState()==12){
+                        Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has been paired successfully", Toast.LENGTH_SHORT).show();
+
+                    }else{
+                        if(device.getBondState()==11){
+                            Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " is pairing", Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has not been paired", Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                    //bluetoothConnection = new BluetoothConnectionService(Settings.this);
+
+                    //Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has been paired unless the user said no", Toast.LENGTH_SHORT).show();
+                    if((device.getName().equals("RNBT-1100") /*the following par is ONLY for testing */ || (device.getName().equals("olivier")))){    //RNBT-1100 is the name of the bluetooth module on the robot
                         AlertDialog.Builder myPopup = new AlertDialog.Builder(activity);
                         myPopup.setTitle("You selected : "+device.getName());
                         myPopup.setMessage("Would you like to open the control menu of the reobot?");
@@ -288,7 +307,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Toast.makeText(getApplicationContext(),"Clicked 'Yes'", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(Settings.this, MainActivity.class);
+                                Intent intent = new Intent(Settings.this, Steering.class);
                                 startActivity(intent);
                                 finish();
                             }
@@ -306,6 +325,15 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                 return true;
             }
             });
+        /**
+         * test part to communication BT
+         */
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bluetoothConnection.write(edit2text.getText().toString().getBytes());
+            }
+        });
     }
 
     /**

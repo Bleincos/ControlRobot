@@ -65,6 +65,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
 
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
     <SeekBar
         android:id="@+id/brightnessBar"
         style="@style/Widget.AppCompat.SeekBar"
@@ -112,5 +124,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/brightnessBar"
         app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/editBT"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:hint="@string/text2edit"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/listViewBTAppaired"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBTSearch"
+        app:layout_constraintVertical_bias="0.352"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

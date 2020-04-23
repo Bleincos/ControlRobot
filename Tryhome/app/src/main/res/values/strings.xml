@@ -25,4 +25,5 @@
     <string name="arrowLeft">arrow left</string>
     <string name="arrowBackward">arrow down</string>
     <string name="arrowRight">arrow right</string>
+    <string name="text2edit">text2edit</string>
 </resources>
