@@ -278,7 +278,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener{
                     devices.get(position).createBond();
 
                     device = devices.get(position);
-                    ParcelUuid[] myUUID =device.getUuids();
                     bluetoothConnection = new BluetoothConnectionService(Settings.this);
                     Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + "has been paired unless the pins are refuse", Toast.LENGTH_SHORT).show();
                     if(device.getName() == "RNBT-1100"|| device.getName() == "SURFACE-OLIVIER"){    //RNBT-1100 is the name of the bluetooth module on the robot
