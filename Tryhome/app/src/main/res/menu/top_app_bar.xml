@@ -3,7 +3,6 @@
 
 
     <item
-<<<<<<< HEAD
         android:id="@+id/menu"
         android:title="@string/menu"
         android:contentDescription="content_description_menu"
@@ -33,11 +32,9 @@
         android:title="@string/instruction"
         android:contentDescription="content_description_instruction"
         app:showAsAction="never" />
-=======
         android:id="@+id/more"
         android:contentDescription="@string/content_description_more"
         android:title="@string/menu"
         app:showAsAction="never"/>
 
->>>>>>> master
 </menu>
