@@ -76,9 +76,8 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     private final static int REQUEST_ENABLE_BLUETOOTH = 1;
     private SeekBar seekBar;
 
-    private Button send;
     private Activity activity;
-    private EditText edit2text;
+
 
     /**
      * This is the elemens call when the activity is create, the listenners and initialisations will be there or called from here
@@ -334,15 +333,19 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
                 return true;
             }
         });
+        /*
         /**
          * test part to communication BT
          */
+        /*
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bluetoothConnection.write(edit2text.getText().toString().getBytes());
             }
         });
+
+         */
     }
 
     /**
@@ -541,7 +544,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -549,15 +552,19 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
         return true;
     }
 
+ */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
             case R.id.menu:
                 Toast.makeText(getApplicationContext(), "OLIVIER", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(Settings.this, MainActivity.class);
+                /*Intent intent2 = new Intent(Settings.this, MainActivity.class);
                 startActivity(intent2);
                 finish();
+
+                 */
                 return true;
 
 
