@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       //Toolbar
         Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
         setSupportActionBar(myToolbar);
 
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.more:
+            case R.id.menu:
                 Intent intent2 = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent2);
                 finish();

@@ -29,21 +29,6 @@
     <!-- Note: A RecyclerView can also be used -->
 
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <!-- Scrollable content -->
-
-        <TextView
-            android:id="@+id/Hello"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Welcome" />
-    </androidx.core.widget.NestedScrollView>
-
     <Button
         android:id="@+id/buttonBack2"
         android:layout_width="wrap_content"
@@ -55,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewListBluetoothAppaired"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.987" />
 
     <TextView
         android:id="@+id/textViewBluetooth"
@@ -102,18 +87,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
 
-    <Button
-        android:id="@+id/buttonSend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
-
     <SeekBar
         android:id="@+id/brightnessBar"
         style="@style/Widget.AppCompat.SeekBar"
@@ -130,8 +103,8 @@
 
     <ListView
         android:id="@+id/listViewBTSearch"
-        android:layout_width="368dp"
-        android:layout_height="173dp"
+        android:layout_width="352dp"
+        android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -157,26 +130,9 @@
         android:text="@string/auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/brightnessBar"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <EditText
-        android:id="@+id/editBT"
-        android:layout_width="111dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:ems="10"
-        android:hint="@string/text2edit"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/listViewBTAppaired"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBTSearch"
-        app:layout_constraintVertical_bias="0.352"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
