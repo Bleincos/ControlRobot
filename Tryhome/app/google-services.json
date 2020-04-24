@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "962526781028",
-    "firebase_url": "https://control-my-sambot.firebaseio.com",
-    "project_id": "control-my-sambot",
-    "storage_bucket": "control-my-sambot.appspot.com"
+    "project_number": "1064845561182",
+    "firebase_url": "https://sambot-2a348.firebaseio.com",
+    "project_id": "sambot-2a348",
+    "storage_bucket": "sambot-2a348.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:962526781028:android:07b5152ba2623f5634c971",
+        "mobilesdk_app_id": "1:1064845561182:android:7e293e90ad51dd4de853cf",
         "android_client_info": {
-          "package_name": "com.example.controlrobot"
+          "package_name": "com.example.tryhome"
         }
       },
       "oauth_client": [
         {
-          "client_id": "962526781028-0gbitq8p9lc5em1rh8hus8e3dogk8srs.apps.googleusercontent.com",
+          "client_id": "1064845561182-9mq5er0fn3dtkoavqssbp8klu7khipmc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDR1NmeoI4yS5WXB6UuQQPv8OBcRA4qgJU"
+          "current_key": "AIzaSyDLxEaT8QKgyZzuP5qbKG3JoGadwL-MqSg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "962526781028-0gbitq8p9lc5em1rh8hus8e3dogk8srs.apps.googleusercontent.com",
+              "client_id": "1064845561182-9mq5er0fn3dtkoavqssbp8klu7khipmc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
