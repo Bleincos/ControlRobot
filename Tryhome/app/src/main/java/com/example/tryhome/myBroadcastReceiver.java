@@ -14,8 +14,8 @@ public class myBroadcastReceiver extends BroadcastReceiver {
     /**
      *Allow to connect with a bluetooth connection
      *
-     * @param context v
-     * @param intent v
+     * @param context the context when called
+     * @param intent the intent
      */
     @Override
     public void onReceive(Context context, Intent intent) {

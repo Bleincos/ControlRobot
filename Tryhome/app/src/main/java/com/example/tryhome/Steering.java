@@ -36,7 +36,7 @@ public class Steering extends AppCompatActivity {
 
     /**
      *
-     * @param savedInstanceState
+     * @param savedInstanceState The instace call, generic parameter
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,8 +142,8 @@ public class Steering extends AppCompatActivity {
 
     /**
      *
-     * @param item
-     * @return
+     * @param item the item selected on the bar
+     * @return return a boolean value
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

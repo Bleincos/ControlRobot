@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private myBroadcastReceiver abroadcastReceiverTEST = new myBroadcastReceiver();
 
     /**
-     *onCreate,  wait for clickListeners
+     * onCreate,  wait for clickListeners
      * @param savedInstanceState The instace call, generic parameter
      */
     @Override
