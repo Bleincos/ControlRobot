@@ -21,6 +21,9 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.ParcelUuid;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -34,6 +37,7 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -96,7 +100,8 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
          * Pop up part
          */
         this.activity = this;
-
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
+        setSupportActionBar(myToolbar);
         /**
          SeekBar Part
          */
@@ -533,7 +538,37 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
      * @param sensor   the sensor
      * @param accuracy its accuracy
      */
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.top_app_bar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.more:
+                Toast.makeText(getApplicationContext(), "OLIVIER", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(Settings.this, MainActivity.class);
+                startActivity(intent2);
+                finish();
+                return true;
+                // User chose the "Favorite" action, mark the current item
+                // as a favorite...
+                //return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
     }
 }
