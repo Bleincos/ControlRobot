@@ -525,4 +525,34 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
+<<<<<<< Updated upstream
+=======
+/*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.top_app_bar, menu);
+        return true;
+    }
+*/
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu:
+                Toast.makeText(getApplicationContext(), "OLIVIER", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(Settings.this, MainActivity.class);
+                startActivity(intent2);
+                finish();
+                return true;
+
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+>>>>>>> Stashed changes
 }
