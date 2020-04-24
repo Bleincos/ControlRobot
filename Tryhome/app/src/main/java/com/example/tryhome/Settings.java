@@ -147,8 +147,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
         /**
          Bluetooth Part
          */
-        send = findViewById(R.id.buttonSend);
-        edit2text = findViewById(R.id.editBT);
+
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         broadcastReceiver = new BroadcastReceiver() {
             @Override
