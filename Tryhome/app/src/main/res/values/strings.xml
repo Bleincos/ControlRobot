@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">tryhome</string>
-
+    <string name="app_name">SamBot App</string>
     <string name="blank" />
     <string name="about">About</string>
     <string name="todo">TODO</string>
+    <string name="bluetooth_connection">Bluetooth connection</string>
     <string name="marwane">Marwane</string>
     <string name="and">and</string>
     <string name="olivier_bleinc">Olivier Bleinc</string>
@@ -27,4 +27,7 @@
     <string name="arrowRight">arrow right</string>
     <string name="text2edit">text2edit</string>
     <string name="speed">The speed is set to : 0</string>
+
+
+    <string name="menu">Menu</string>
 </resources>
