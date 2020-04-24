@@ -301,7 +301,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
 
                         }
                     }
-                    //bluetoothConnection = new BluetoothConnectionService(Settings.this);
+
 
                     //Toast.makeText(getApplicationContext(), "Your device :"+device.getName() + " has been paired unless the user said no", Toast.LENGTH_SHORT).show();
                     if ((device.getName().equals("RNBT-B100") /*the following par is ONLY for testing */ || (device.getName().equals("olivier")))) {    //RNBT-1100 is the name of the bluetooth module on the robot
