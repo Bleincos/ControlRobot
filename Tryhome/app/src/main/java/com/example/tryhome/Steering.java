@@ -26,6 +26,9 @@ public class Steering extends AppCompatActivity {
     private String left, right, go, stop, back, forward;
     private TextView speed;
 
+//DataBase reference
+    DataBaseReference mRootRef = FireBaseDataBase.getInstance().getReference();*
+    DataBaseReference mySmileyRef = mRootRef.child("smiley");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
