@@ -28,6 +28,7 @@ public class Steering extends AppCompatActivity {
     public BluetoothConnectionService bluetoothConnection;
     private String left, right, go, stop, back, forward;
     private TextView speed;
+    private Button backButton;
 
 //DataBase reference
    // DataBaseReference mRootRef = FireBaseDataBase.getInstance().getReference();*
@@ -44,7 +45,7 @@ public class Steering extends AppCompatActivity {
         // Toolbar
         Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
         setSupportActionBar(myToolbar);
-
+    backButton = findViewById(R.id.buttonBack3);
 
         speed = findViewById(R.id.velocityValue);
         velocity = findViewById(R.id.velocity);
@@ -115,6 +116,18 @@ public class Steering extends AppCompatActivity {
             }
         });
         velocity.setProgress(0);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param v  vvvv
+             */
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Steering.this, Settings.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     /**

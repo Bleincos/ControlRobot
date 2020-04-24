@@ -529,9 +529,19 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
+<<<<<<< HEAD
 
 
 
+=======
+/*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.top_app_bar, menu);
+        return true;
+    }
+>>>>>>> master
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -553,5 +563,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
         }
     }
 
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> master
 }

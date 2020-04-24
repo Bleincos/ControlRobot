@@ -25,7 +25,7 @@ public class showPdf extends AppCompatActivity {
         Button back;
         PDFView apdfView;
         apdfView = findViewById(R.id.pdfView);
-        apdfView.fromAsset("example.pdf").load();
+        apdfView.fromAsset("how_to_use.pdf").load();
 
         back = findViewById(R.id.buttonBack);
         back.setOnClickListener(new View.OnClickListener() {
