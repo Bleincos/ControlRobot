@@ -1,5 +1,10 @@
 package com.example.tryhome;
 
+/**
+ * ABluetoothArrayAdapter is a class used for Bluetooth connection.
+ *
+ * @version 1.1
+ */
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;

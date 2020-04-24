@@ -1,4 +1,8 @@
 package com.example.tryhome;
+/**
+ *Steering is a class used for utilisation page.
+ * @version 1.1
+ */
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,7 +15,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 import org.w3c.dom.Text;
 
 public class Steering extends AppCompatActivity {
@@ -30,7 +33,10 @@ public class Steering extends AppCompatActivity {
    // DataBaseReference mRootRef = FireBaseDataBase.getInstance().getReference();*
     //DataBaseReference mySmileyRef = mRootRef.child("smiley");
 
-
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,12 +116,22 @@ public class Steering extends AppCompatActivity {
         });
         velocity.setProgress(0);
     }
+
+    /**
+     * set the velocity to the screen
+     * @param value
+     */
     public void setVelocity(int value){
         String theValue = ""+value;
         bluetoothConnection.write(theValue.getBytes());
         speed.setText("The speed is set to :" +theValue);
     }
 
+    /**
+     *
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

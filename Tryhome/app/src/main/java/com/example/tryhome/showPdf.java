@@ -1,5 +1,8 @@
 package com.example.tryhome;
-
+/**
+ *ShowPdf is a class used for utilisation page.
+ * @version 1.1
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +14,7 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class showPdf extends AppCompatActivity {
     /**
-     *
+     *onCreate : display the pdf
      * @param savedInstanceState b
      */
     @Override

@@ -1,7 +1,9 @@
 package com.example.tryhome;
 
 /**
- * Created by markjoselli2015 on 4/14/15.
+ *  Bluetooth callback test
+ *
+ *   @version 1.1
  */
 public interface BluetoothCallback {
 

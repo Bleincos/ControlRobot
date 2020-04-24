@@ -1,5 +1,9 @@
 package com.example.tryhome;
-
+/**
+ * About is a class used for About page.
+ *
+ * @version 1.1
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

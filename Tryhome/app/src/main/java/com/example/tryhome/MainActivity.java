@@ -1,5 +1,9 @@
 package com.example.tryhome;
-
+/**
+ *MainActivity is a class used for the main page.
+ *
+ * @version 1.1
+ */
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
@@ -23,16 +27,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    /**
-     *
-     */
+
     public Boolean success =false, bool;
     private Button showInstruction;
 
     private myBroadcastReceiver abroadcastReceiverTEST = new myBroadcastReceiver();
 
     /**
-     *
+     *onCreate,  wait for clickListeners
      * @param savedInstanceState The instace call, generic parameter
      */
     @Override
@@ -76,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     *onStart,
      */
     @Override
     protected void onStart() {
@@ -90,13 +92,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     *onStop
      */
     @Override
     protected void onStop() {
         super.onStop();
         unregisterReceiver(abroadcastReceiverTEST);
     }
+
+    /**
+     *
+     */
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void checkBTPermissions(){
         if(Build.VERSION.SDK_INT> Build.VERSION_CODES.LOLLIPOP){
@@ -110,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

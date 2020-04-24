@@ -1,5 +1,9 @@
 package com.example.tryhome;
-
+/**
+ *myBroadcastReceiver is a class used for the Bluetooth connection to the surrounding devices.
+ *
+ * @version 1.1
+ */
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +12,7 @@ import android.widget.Toast;
 
 public class myBroadcastReceiver extends BroadcastReceiver {
     /**
+     *Allow to connect with a bluetooth connection
      *
      * @param context v
      * @param intent v

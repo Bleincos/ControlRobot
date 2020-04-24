@@ -15,7 +15,11 @@
  */
 
 package com.example.tryhome;
-
+/**
+ *Material Toolbar is a class used for the utilisation of a Material Toolbar.
+ * This is the license : http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -56,18 +60,35 @@ import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wra
  *         android:layout_height=&quot;wrap_content&quot;/&gt;
  * </pre>
  */
+
+
 public class MaterialToolbar extends Toolbar {
 
     private static final int DEF_STYLE_RES = com.google.android.material.R.style.Widget_MaterialComponents_Toolbar;
 
+    /**
+     *
+     * @param context
+     */
     public MaterialToolbar(@NonNull Context context) {
         this(context, null);
     }
 
+    /**
+     *
+     * @param context
+     * @param attrs
+     */
     public MaterialToolbar(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, com.google.android.material.R.attr.toolbarStyle);
     }
 
+    /**
+     *
+     * @param context
+     * @param attrs
+     * @param defStyleAttr
+     */
     public MaterialToolbar(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(wrap(context, attrs, defStyleAttr, DEF_STYLE_RES), attrs, defStyleAttr);
         // Ensure we are using the correctly themed context rather than the context that was passed in.
@@ -76,6 +97,9 @@ public class MaterialToolbar extends Toolbar {
         initBackground(context);
     }
 
+    /**
+     *
+     */
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -83,6 +107,10 @@ public class MaterialToolbar extends Toolbar {
         MaterialShapeUtils.setParentAbsoluteElevation(this);
     }
 
+    /**
+     *
+     * @param elevation
+     */
     @RequiresApi(VERSION_CODES.LOLLIPOP)
     @Override
     public void setElevation(float elevation) {
@@ -91,6 +119,10 @@ public class MaterialToolbar extends Toolbar {
         MaterialShapeUtils.setElevation(this, elevation);
     }
 
+    /**
+     *
+     * @param context
+     */
     private void initBackground(Context context) {
         Drawable background = getBackground();
         if (background != null && !(background instanceof ColorDrawable)) {

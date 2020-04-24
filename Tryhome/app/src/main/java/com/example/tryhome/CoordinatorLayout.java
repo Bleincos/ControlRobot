@@ -1,5 +1,10 @@
 package com.example.tryhome;
-
+/**
+ * CoordinatorLayout is a class use like a test.
+ *
+ * @author
+ * @version 1.1
+ */
 import androidx.annotation.NonNull;
 
 import androidx.core.view.NestedScrollingParent2;
