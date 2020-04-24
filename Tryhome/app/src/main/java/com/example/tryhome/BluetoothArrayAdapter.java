@@ -17,9 +17,9 @@ import java.util.List;
 public class BluetoothArrayAdapter extends ArrayAdapter {
     /**
      *
-     * @param context b
-     * @param ressource b
-     * @param devices b
+     * @param context The context of the call of the function
+     * @param ressource the ressource used
+     * @param devices the bluetooth device we want to act on
      */
      public BluetoothArrayAdapter(@NonNull Context context, int ressource, List<BluetoothDevice> devices) {
         super(context, 0, devices);

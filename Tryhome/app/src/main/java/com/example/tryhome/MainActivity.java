@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      *
-     * @param savedInstanceState
+     * @param savedInstanceState The instace call, generic parameter
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
