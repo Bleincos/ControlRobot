@@ -30,4 +30,8 @@
 
 
     <string name="menu">Menu</string>
+    <string name="direction">Direction</string>
+    <string name="settings">Settings</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="instruction">Instruction</string>
 </resources>

@@ -122,7 +122,7 @@ public class Steering extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.more:
+            case R.id.menu:
                 Intent intent2 = new Intent(Steering.this, MainActivity.class);
                 startActivity(intent2);
                 finish();

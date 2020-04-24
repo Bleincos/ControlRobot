@@ -3,9 +3,33 @@
 
 
     <item
-        android:id="@+id/more"
+        android:id="@+id/menu"
         android:title="@string/menu"
-        android:contentDescription="content_description_more"
+        android:contentDescription="content_description_menu"
         app:showAsAction="never" />
-
+    <item
+        android:id="@+id/direction"
+        android:title="@string/direction"
+        android:contentDescription="content_description_direction"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:contentDescription="content_description_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bluetooth"
+        android:title="@string/bluetooth"
+        android:contentDescription="content_description_bluetooth"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        android:contentDescription="content_description_about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/instruction"
+        android:title="@string/instruction"
+        android:contentDescription="content_description_instruction"
+        app:showAsAction="never" />
 </menu>
