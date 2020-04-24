@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.os.ParcelUuid;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -36,8 +37,10 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -90,7 +93,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Toolbar
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
+        setSupportActionBar(myToolbar);
         if (Build.VERSION.SDK_INT >= VERSION_CODES.M) {
             checkBTPermissions();
             getPermissionBrightness();
@@ -529,31 +534,26 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-<<<<<<< HEAD
 
 
 
-=======
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.top_app_bar, menu);
-        return true;
-    }
->>>>>>> master
+
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
             case R.id.menu:
-                Intent intent2 = new Intent(Settings.this, MainActivity.class);
-                startActivity(intent2);
+                Intent intent2 = new Intent(this, MainActivity.class);
+                this.startActivity(intent2);
+
                 finish();
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
-                //return true;
+                return true;
+
 
             default:
                 // If we got here, the user's action was not recognized.
@@ -562,10 +562,4 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
 
         }
     }
-
-<<<<<<< HEAD
-
-=======
- */
->>>>>>> master
 }
