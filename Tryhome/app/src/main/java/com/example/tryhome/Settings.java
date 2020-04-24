@@ -21,9 +21,6 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.ParcelUuid;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -37,10 +34,10 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.UUID;
 
 public class Settings extends AppCompatActivity implements SensorEventListener {
     private static int valueMaxBrg = 4096; // For the dev's device set it to 4096 for emulation set it to 255
@@ -76,8 +73,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     private final static int REQUEST_ENABLE_BLUETOOTH = 1;
     private SeekBar seekBar;
 
+    private Button send;
     private Activity activity;
-
+    private EditText edit2text;
 
     /**
      * This is the elemens call when the activity is create, the listenners and initialisations will be there or called from here
@@ -87,9 +85,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
-        setSupportActionBar(myToolbar);
-
 
         if (Build.VERSION.SDK_INT >= VERSION_CODES.M) {
             checkBTPermissions();
@@ -101,6 +96,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
          * Pop up part
          */
         this.activity = this;
+
         /**
          SeekBar Part
          */
@@ -146,7 +142,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
         /**
          Bluetooth Part
          */
-
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         broadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -333,19 +328,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
                 return true;
             }
         });
-        /*
-        /**
-         * test part to communication BT
-         */
-        /*
-        send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bluetoothConnection.write(edit2text.getText().toString().getBytes());
-            }
-        });
-
-         */
     }
 
     /**
@@ -540,39 +522,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
      * @param sensor   the sensor
      * @param accuracy its accuracy
      */
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.top_app_bar, menu);
-        return true;
-    }
-
- */
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.menu:
-                Toast.makeText(getApplicationContext(), "OLIVIER", Toast.LENGTH_SHORT).show();
-                /*Intent intent2 = new Intent(Settings.this, MainActivity.class);
-                startActivity(intent2);
-                finish();
-
-                 */
-                return true;
-
-
-            default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
-
-        }
     }
 }
