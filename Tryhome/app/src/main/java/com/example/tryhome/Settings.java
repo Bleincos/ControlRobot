@@ -81,9 +81,9 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     private final static int REQUEST_ENABLE_BLUETOOTH = 1;
     private SeekBar seekBar;
 
-    private Button send;
+
     private Activity activity;
-    private EditText edit2text;
+
 
     /**
      * This is the elemens call when the activity is create, the listenners and initialisations will be there or called from here
@@ -119,10 +119,12 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
          Sensors part
          */
         boxAuto = findViewById(R.id.autoLight);
+
+
         boxAuto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (boxAuto.isChecked()&& success) {
+                if (boxAuto.isChecked() && success) {
                     Toast.makeText(Settings.this, "The brightness will be set automatically", Toast.LENGTH_LONG).show();
                     mySensorManager.registerListener(/*(SensorEventListener)*/ Settings.this, sensorLight, mySensorManager.SENSOR_DELAY_NORMAL);
 
