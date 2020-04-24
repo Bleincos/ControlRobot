@@ -525,8 +525,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-<<<<<<< Updated upstream
-=======
 /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -534,7 +532,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
         inflater.inflate(R.menu.top_app_bar, menu);
         return true;
     }
-*/
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -554,5 +552,6 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
 
         }
     }
->>>>>>> Stashed changes
+
+ */
 }
