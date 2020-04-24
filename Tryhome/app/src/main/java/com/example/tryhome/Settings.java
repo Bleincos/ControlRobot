@@ -21,6 +21,11 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.ParcelUuid;
 import android.util.Log;
+<<<<<<< HEAD
+=======
+import android.view.Menu;
+import android.view.MenuInflater;
+>>>>>>> master
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -101,7 +106,8 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
          * Pop up part
          */
         this.activity = this;
-
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
+        setSupportActionBar(myToolbar);
         /**
          SeekBar Part
          */
@@ -537,19 +543,38 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
      * @param sensor   the sensor
      * @param accuracy its accuracy
      */
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.top_app_bar, menu);
+        return true;
+    }
+>>>>>>> master
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
+<<<<<<< HEAD
             case R.id.menu:
                 Intent intent2 = new Intent(Settings.this, MainActivity.class);
                 startActivity(intent2);
                 finish();
+=======
+            case R.id.more:
+                Toast.makeText(getApplicationContext(), "OLIVIER", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(Settings.this, MainActivity.class);
+                startActivity(intent2);
+                finish();
+                return true;
+>>>>>>> master
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
                 //return true;
