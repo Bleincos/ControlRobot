@@ -30,4 +30,6 @@
 
 
     <string name="menu">Menu</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
 </resources>

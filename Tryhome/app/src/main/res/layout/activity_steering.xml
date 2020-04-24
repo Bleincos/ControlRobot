@@ -8,6 +8,7 @@
     tools:context="com.example.tryhome.Steering">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,31 +30,16 @@
     <!-- Note: A RecyclerView can also be used -->
 
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <!-- Scrollable content -->
-
-        <TextView
-            android:id="@+id/Hello"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Welcome" />
-    </androidx.core.widget.NestedScrollView>
-
     <LinearLayout
         android:id="@+id/tableRow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="394dp"
+        android:layout_height="352dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
         <ImageButton
             android:id="@+id/imageButtonForward"
@@ -69,7 +55,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="272dp"
+            android:layout_height="227dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -85,8 +71,8 @@
                 android:textColor="#FFF" />
 
             <LinearLayout
-                android:layout_width="248dp"
-                android:layout_height="271dp">
+                android:layout_width="258dp"
+                android:layout_height="match_parent">
 
 
                 <ImageButton
@@ -98,6 +84,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/green_button"
+                    android:contentDescription="@string/start"
                     android:scaleType="fitCenter" />
 
                 <ImageButton
@@ -108,6 +95,7 @@
                     android:layout_gravity="center|end"
                     android:layout_weight="1"
                     android:background="@drawable/red_button"
+                    android:contentDescription="@string/stop"
                     android:scaleType="fitCenter" />
             </LinearLayout>
 
@@ -150,10 +138,10 @@
         android:thumb="@android:drawable/radiobutton_off_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toEndOf="@+id/tableRow"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <TextView
         android:id="@+id/velocityValue"
@@ -162,9 +150,9 @@
         android:text="@string/speed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="@+id/velocity"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90999997" />
+        app:layout_constraintVertical_bias="0.52" />
 
 </androidx.constraintlayout.widget.ConstraintLayout >

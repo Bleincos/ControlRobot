@@ -40,3 +40,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:9.6.1'
     implementation 'com.google.firebase:firebase-messaging:19.0.1'
 }
+
+apply plugin: 'com.google.gms.google-services'

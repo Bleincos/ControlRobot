@@ -31,8 +31,6 @@ public class Steering extends AppCompatActivity {
     //DataBaseReference mySmileyRef = mRootRef.child("smiley");
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
