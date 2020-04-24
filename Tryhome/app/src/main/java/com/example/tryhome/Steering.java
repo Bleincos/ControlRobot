@@ -19,9 +19,11 @@ public class Steering extends AppCompatActivity {
     private ImageButton moveBackward;
     private ImageButton moveLeft;
     private ImageButton moveRight;
+    private ImageButton imageButtonStart;
+    private ImageButton imageButtonStop;
     private SeekBar velocity;
     public BluetoothConnectionService bluetoothConnection;
-    private String left, right, up, down;
+    private String left, right, go, stop, back, forward;
     private TextView speed;
 
 
@@ -36,15 +38,19 @@ public class Steering extends AppCompatActivity {
 
         speed = findViewById(R.id.velocityValue);
         velocity = findViewById(R.id.velocity);
-        up = "go";
-        down = "back";
-        left = "TEST LEFT";
-        right = "TEST RIGHT";
+        go = "go";
+        stop = "stop";
+        back = "back";
+        forward = "forward";
+        left = "left";
+        right = "right";
         bluetoothConnection = new BluetoothConnectionService(Steering.this);
         moveBackward = findViewById(R.id.imageButtonBack);
         moveForward = findViewById(R.id.imageButtonForward);
         moveRight = findViewById(R.id.imageButtonRight);
         moveLeft = findViewById(R.id.imageButtonLeft);
+        imageButtonStart = findViewById(R.id.imageButtonStart);
+        imageButtonStop = findViewById(R.id.imageButtonStop);
         velocity.setMax(100); // the speed limit is set to 100 which correspond to 100%
         moveLeft.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,13 +67,25 @@ public class Steering extends AppCompatActivity {
         moveForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bluetoothConnection.write(up.getBytes());
+                bluetoothConnection.write(forward.getBytes());
             }
         });
         moveBackward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bluetoothConnection.write(down.getBytes());
+                bluetoothConnection.write(back.getBytes());
+            }
+        });
+       imageButtonStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bluetoothConnection.write(go.getBytes());
+            }
+        });
+        imageButtonStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bluetoothConnection.write(stop.getBytes());
             }
         });
         velocity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
