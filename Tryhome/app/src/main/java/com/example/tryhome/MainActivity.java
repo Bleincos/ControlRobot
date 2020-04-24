@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.textclassifier.TextLinks;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     /**
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.topAppBar);
+        setSupportActionBar(myToolbar);
 
         Button about, roundCorner;
         showInstruction = findViewById(R.id.buttonInstructions2);
@@ -102,6 +106,26 @@ public class MainActivity extends AppCompatActivity {
             else{
                 Log.d("Settings", "Check permission for BT");
             }
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.more:
+                Intent intent2 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent2);
+                finish();
+                // User chose the "Favorite" action, mark the current item
+                // as a favorite...
+                //return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
         }
     }
 
