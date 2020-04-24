@@ -27,8 +27,13 @@ public class Steering extends AppCompatActivity {
     private TextView speed;
 
 //DataBase reference
+<<<<<<< Updated upstream
    // DataBaseReference mRootRef = FireBaseDataBase.getInstance().getReference();*
     //DataBaseReference mySmileyRef = mRootRef.child("smiley");
+=======
+    DataBaseReference mRootRef = FireBaseDataBase.getInstance().getReference();
+    DataBaseReference mySmileyRef = mRootRef.child("smiley");
+>>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

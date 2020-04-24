@@ -472,7 +472,7 @@ public class Settings extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onResume() {
         super.onResume();
-        mySensorManager.registerListener((SensorEventListener) Settings.this, sensorLight, mySensorManager.SENSOR_DELAY_NORMAL);
+        mySensorManager.registerListener(/*(SensorEventListener)*/ Settings.this, sensorLight, mySensorManager.SENSOR_DELAY_NORMAL);
     }
 
     /**
